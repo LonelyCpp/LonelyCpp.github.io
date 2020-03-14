@@ -337,17 +337,20 @@ useEffect(() => {
 Now make a simple component to render this progress fraction as a progress bar.
 
 ```javascript
-const ProgressBar = ({ progress }) => (
-  <View style={{ borderWidth: 1, marginVertical: 16 }}>
-    <View
-      style={{
-        backgroundColor: "green",
-        height: 10,
-        width: `${progress || 0}%`
-      }}
-    />
-  </View>
-);
+const ProgressBar = ({ progress }) => {
+  const width = (progress || 0) + "%";
+  return (
+    <View style={{ borderWidth: 1, marginVertical: 16 }}>
+      <View
+        style={{
+          backgroundColor: "green",
+          height: 10,
+          width
+        }}
+      />
+    </View>
+  );
+};
 ```
 
 ### Final Result
@@ -434,17 +437,20 @@ const getProgress = async () => {
   return completed / total;
 };
 
-const ProgressBar = ({ progress }) => (
-  <View style={{ borderWidth: 1, marginVertical: 16 }}>
-    <View
-      style={{
-        backgroundColor: "green",
-        height: 10,
-        width: `${progress || 0}%`
-      }}
-    />
-  </View>
-);
+const ProgressBar = ({ progress }) => {
+  const width = (progress || 0) + "%";
+  return (
+    <View style={{ borderWidth: 1, marginVertical: 16 }}>
+      <View
+        style={{
+          backgroundColor: "green",
+          height: 10,
+          width
+        }}
+      />
+    </View>
+  );
+};
 
 const VideoItem = ({ videoId, onPress }) => {
   const [videoMeta, setVideoMeta] = useState(null);
