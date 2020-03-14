@@ -60,11 +60,81 @@ Multiple `<YoutubePlayer />` components with different `videoId`s can be in the 
 
 ### MORE
 
-Life needs more challenges. Soo... 🍻🍻 lets just build a simple functional app that plays a video series and tracks your progress.
+Lets build a more complicated app with some of the features provided by the library.
 
-The app needs
+The app features -
 
 - a list of videos
-- track completion progress
 - persist where the user last left the video
-- have useful checkpoints in the video to navigate to
+- track completion progress
+
+#### A List of Videos
+
+We can use a `flatlist` to render a list which will have the video thumbnail, and title of the video.
+
+Create a list of videos you'd like to show -
+
+```javascript
+const videoSeries = [
+  "DC471a9qrU4",
+  "tVCYa_bnITg",
+  "K74l26pE4YA",
+  "m3OjWNFREJo"
+];
+```
+
+```JSX
+<FlatList
+        contentContainerStyle={{margin: 16}}
+        ListHeaderComponent={
+          <>
+            <Text style={{fontSize: 18, fontWeight: 'bold'}}>
+              100 Seconds of Code
+            </Text>
+          </>
+        }
+        data={videoSeries}
+        renderItem={({item}) => (
+          <VideoItem videoId={item} onPress={onVideoPress} />
+        )}
+        keyExtractor={item => item}
+      />
+```
+
+To get the thumbnail, title and author use the `getYoutubeMeta` function provided by the package.
+
+```JSX
+const VideoItem = ({videoId, onPress}) => {
+  const [videoMeta, setVideoMeta] = useState(null);
+  useEffect(() => {
+    getYoutubeMeta(videoId).then(data => {
+      setVideoMeta(data);
+    });
+  }, [videoId]);
+
+  if (videoMeta) {
+    return (
+      <TouchableOpacity
+        onPress={() => onPress(videoId)}
+        style={{flexDirection: 'row', marginVertical: 16}}>
+        <Image
+          source={{uri: videoMeta.thumbnail_url}}
+          style={{
+            width: videoMeta.thumbnail_width / 4,
+            height: videoMeta.thumbnail_height / 4,
+          }}
+        />
+        <View style={{justifyContent: 'center', marginStart: 16}}>
+          <Text style={{marginVertical: 4, fontWeight: 'bold'}}>
+            {videoMeta.title}
+          </Text>
+          <Text>{videoMeta.author_name}</Text>
+        </View>
+      </TouchableOpacity>
+    );
+  }
+  return null;
+};
+```
+
+![screenshot](../assets/rn_yt_2.png?raw=true)
