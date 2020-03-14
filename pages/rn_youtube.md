@@ -105,7 +105,7 @@ const videoSeries = [
 />
 ```
 
-To get the thumbnail, title and author use the `getYoutubeMeta` function provided by the package.
+To get the thumbnail, title and author use the `getYoutubeMeta` function provided by the package. As it returns a promise while it makes the API call, we will use a state variable to hold the data and render it when the promise is resolved. (A loading state could be added here)
 
 ```JSX
 const VideoItem = ({videoId, onPress}) => {
@@ -246,7 +246,7 @@ const getVideoProgress = async videoId => {
 };
 ```
 
-Now to periodically update the timestamp, start an interval function that fetches the timestamp in regular intervals. It can be started when the `VideoModal` component mounts using `useEffect`
+Now to periodically update the timestamp, start an interval function that fetches the timestamp in regular intervals. It can be started when the `VideoModal` component mounts using `useEffect`. The `useEffect` function is called once when the component mounts to start the timer which will execute every 2 seconds here. It returns a function that clears the interval when the component is unmounted.
 
 (`VideoModal` component)
 
@@ -270,7 +270,7 @@ useEffect(() => {
 }, [videoId, completed]);
 ```
 
-Now to seek to previous timestamp, a callback to player `onReady` can be used.
+To seek to the previous timestamp, a callback to player `onReady` can be used. When the player becomes ready, the last updated timestamp is fetched and the video is set to that time stamp using the `seekTo` method exposed through the player ref.
 
 (`VideoModal` component)
 
@@ -284,7 +284,7 @@ const onPlayerReady = useCallback(() => {
 }, [videoId]);
 ```
 
-also add a `onChangeState` callback to the `YoutubeIframe` component
+To know when the player has finished playing a video, the `onChangeState` callback can be used. It emits a "ended" event when the video reaches the end. On receiving this event, the completed state can be set and stored subsequently in AsyncStorage.
 
 ```jsx
 <YoutubeIframe
@@ -321,9 +321,7 @@ const getProgress = async () => {
 };
 ```
 
-This function iterates through the videoList and checks if the video was watched to completion.
-
-Using the result of this function, we can calculate progress when the modal visibility changes. (since the modal has the actual video player)
+This function iterates through the videoList and checks if the video was watched to completion. Using the result of this function, we can calculate progress when the modal visibility changes. (since the modal has the actual video player).
 
 ```javascript
 const [progress, setProgress] = useState(0);
