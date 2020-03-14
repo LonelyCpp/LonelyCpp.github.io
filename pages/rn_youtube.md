@@ -74,6 +74,8 @@ We can use a `flatlist` to render a list which will have the video thumbnail, an
 
 Create a list of videos you'd like to show -
 
+(global variable)
+
 ```javascript
 const videoSeries = [
   "DC471a9qrU4",
@@ -83,22 +85,24 @@ const videoSeries = [
 ];
 ```
 
+(`App` component)
+
 ```JSX
 <FlatList
-        contentContainerStyle={{margin: 16}}
-        ListHeaderComponent={
-          <>
-            <Text style={{fontSize: 18, fontWeight: 'bold'}}>
-              100 Seconds of Code
-            </Text>
-          </>
-        }
-        data={videoSeries}
-        renderItem={({item}) => (
-          <VideoItem videoId={item} onPress={onVideoPress} />
-        )}
-        keyExtractor={item => item}
-      />
+  contentContainerStyle={{margin: 16}}
+  ListHeaderComponent={
+    <>
+      <Text style={{fontSize: 18, fontWeight: 'bold'}}>
+        100 Seconds of Code
+      </Text>
+    </>
+  }
+  data={videoSeries}
+  renderItem={({item}) => (
+    <VideoItem videoId={item} onPress={onVideoPress} />
+  )}
+  keyExtractor={item => item}
+/>
 ```
 
 To get the thumbnail, title and author use the `getYoutubeMeta` function provided by the package.
@@ -138,3 +142,419 @@ const VideoItem = ({videoId, onPress}) => {
 ```
 
 ![screenshot](../assets/rn_yt_2.png?raw=true)
+
+Now when the user clicks on the video, the app opens a modal with the youtube player on it.
+
+Using react hooks, we can maintain states to manage the modal visibility -
+
+(`App` component)
+
+```javascript
+const [modalVisible, showModal] = useState(false);
+const [selectedVideo, setSelectedVideo] = useState(null);
+
+const onVideoPress = useCallback(videoId => {
+  showModal(true);
+  setSelectedVideo(videoId);
+}, []);
+
+const closeModal = useCallback(() => showModal(false), []);
+```
+
+Modal -
+
+(`App` component)
+
+```JSX
+<Modal
+  visible={modalVisible}
+  transparent={true}
+  onRequestClose={closeModal}>
+  <VideoModal videoId={selectedVideo} onClose={closeModal} />
+</Modal>
+```
+
+```js
+const VideoModal = ({ videoId, onClose }) => {
+  const playerRef = useRef(null);
+
+  return (
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: "#000000dd",
+        justifyContent: "center"
+      }}
+    >
+      <View style={{ backgroundColor: "white", padding: 16 }}>
+        <Text onPress={onClose} style={{ textAlign: "right" }}>
+          Close
+        </Text>
+        <YoutubeIframe
+          ref={playerRef}
+          play={true}
+          videoId={videoId}
+          height={250}
+        />
+      </View>
+    </View>
+  );
+};
+```
+
+#### Persist where the user last left the video
+
+Install `@react-native-community/async-storage` from [here](https://github.com/react-native-community/async-storage#install)
+
+import it into your app -
+`import AsyncStorage from '@react-native-community/async-storage';`
+
+To persist video progress, we can make a map of `videoId` to its time-stamp and completed status.
+
+eg -
+
+```json
+{
+  "DC471a9qrU4": {
+    "timeStamp": 50,
+    "completed": false
+  }
+}
+```
+
+We can use AsyncStorage to store and fetch progress in this format -
+
+```javascript
+const saveVideoProgress = ({ videoId, completed, timeStamp }) => {
+  const data = {
+    completed,
+    timeStamp
+  };
+
+  return AsyncStorage.setItem(videoId, JSON.stringify(data));
+};
+
+const getVideoProgress = async videoId => {
+  const json = await AsyncStorage.getItem(videoId);
+  if (json) {
+    return JSON.parse(json);
+  }
+  return {
+    completed: false,
+    timeStamp: 0
+  };
+};
+```
+
+Now to periodically update the timestamp, start an interval function that fetches the timestamp in regular intervals. It can be started when the `VideoModal` component mounts using `useEffect`
+
+(`VideoModal` component)
+
+```javascript
+const [completed, setCompleted] = useState(false);
+
+useEffect(() => {
+  const timer = setInterval(() => {
+    playerRef.current?.getCurrentTime().then(data => {
+      saveVideoProgress({
+        videoId,
+        completed,
+        timeStamp: data
+      });
+    });
+  }, 2000);
+
+  return () => {
+    clearInterval(timer);
+  };
+}, [videoId, completed]);
+```
+
+Now to seek to previous timestamp, a callback to player `onReady` can be used.
+
+(`VideoModal` component)
+
+```javascript
+const onPlayerReady = useCallback(() => {
+  getVideoProgress(videoId).then(data => {
+    if (data.timeStamp) {
+      playerRef.current?.seekTo(data.timeStamp);
+    }
+  });
+}, [videoId]);
+```
+
+also add a `onChangeState` callback to the `YoutubeIframe` component
+
+```jsx
+<YoutubeIframe
+  ref={playerRef}
+  play={true}
+  videoId={videoId}
+  height={250}
+  onReady={onPlayerReady}
+  onChangeState={state => {
+    if (state === "ended") {
+      setCompleted(true);
+    }
+  }}
+/>
+```
+
+#### Track completion progress
+
+This will be simple function to query completion status of each video from `AsyncStorage`.
+
+```javascript
+const getProgress = async () => {
+  const total = videoSeries.length;
+  let completed = 0;
+  for (let i = 0; i < total; i++) {
+    const videoId = videoSeries[i];
+    const status = await getVideoProgress(videoId);
+    if (status?.completed) {
+      completed += 1;
+    }
+  }
+
+  return completed / total;
+};
+```
+
+This function iterates through the videoList and checks if the video was watched to completion.
+
+Using the result of this function, we can calculate progress when the modal visibility changes. (since the modal has the actual video player)
+
+```javascript
+const [progress, setProgress] = useState(0);
+useEffect(() => {
+  getProgress().then(p => {
+    setProgress(p);
+  });
+}, [modalVisible]);
+```
+
+Now make a simple component to render this progress fraction as a progress bar.
+
+```javascript
+const ProgressBar = ({ progress }) => (
+  <View style={{ borderWidth: 1, marginVertical: 16 }}>
+    <View
+      style={{
+        backgroundColor: "green",
+        height: 10,
+        width: `${progress || 0}%`
+      }}
+    />
+  </View>
+);
+```
+
+### Final Result
+
+```javascript
+import React, { useState, useEffect, useCallback, useRef } from "react";
+import {
+  SafeAreaView,
+  Text,
+  FlatList,
+  Image,
+  View,
+  TouchableOpacity,
+  Modal
+} from "react-native";
+import YoutubeIframe, { getYoutubeMeta } from "react-native-youtube-iframe";
+import AsyncStorage from "@react-native-community/async-storage";
+
+const videoSeries = [
+  "DC471a9qrU4",
+  "tVCYa_bnITg",
+  "K74l26pE4YA",
+  "m3OjWNFREJo"
+];
+
+const App = () => {
+  const [modalVisible, showModal] = useState(false);
+  const [selectedVideo, setSelectedVideo] = useState(null);
+  const [progress, setProgress] = useState(0);
+
+  const onVideoPress = useCallback(videoId => {
+    showModal(true);
+    setSelectedVideo(videoId);
+  }, []);
+
+  useEffect(() => {
+    getProgress().then(p => {
+      setProgress(p);
+    });
+  }, [modalVisible]);
+
+  const closeModal = useCallback(() => showModal(false), []);
+
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <FlatList
+        contentContainerStyle={{ margin: 16 }}
+        ListHeaderComponent={
+          <>
+            <Text style={{ fontSize: 18, fontWeight: "bold" }}>
+              100 Seconds of Code
+            </Text>
+            <ProgressBar progress={progress * 100} />
+          </>
+        }
+        data={videoSeries}
+        renderItem={({ item }) => (
+          <VideoItem videoId={item} onPress={onVideoPress} />
+        )}
+        keyExtractor={item => item}
+      />
+      <Modal
+        visible={modalVisible}
+        transparent={true}
+        onRequestClose={closeModal}
+      >
+        <VideoModal videoId={selectedVideo} onClose={closeModal} />
+      </Modal>
+    </SafeAreaView>
+  );
+};
+
+const getProgress = async () => {
+  const total = videoSeries.length;
+  let completed = 0;
+  for (let i = 0; i < total; i++) {
+    const videoId = videoSeries[i];
+    const status = await getVideoProgress(videoId);
+    if (status?.completed) {
+      completed += 1;
+    }
+  }
+
+  return completed / total;
+};
+
+const ProgressBar = ({ progress }) => (
+  <View style={{ borderWidth: 1, marginVertical: 16 }}>
+    <View
+      style={{
+        backgroundColor: "green",
+        height: 10,
+        width: `${progress || 0}%`
+      }}
+    />
+  </View>
+);
+
+const VideoItem = ({ videoId, onPress }) => {
+  const [videoMeta, setVideoMeta] = useState(null);
+  useEffect(() => {
+    getYoutubeMeta(videoId).then(data => {
+      setVideoMeta(data);
+    });
+  }, [videoId]);
+
+  if (videoMeta) {
+    return (
+      <TouchableOpacity
+        onPress={() => onPress(videoId)}
+        style={{ flexDirection: "row", marginVertical: 16 }}
+      >
+        <Image
+          source={{ uri: videoMeta.thumbnail_url }}
+          style={{
+            width: videoMeta.thumbnail_width / 4,
+            height: videoMeta.thumbnail_height / 4
+          }}
+        />
+        <View style={{ justifyContent: "center", marginStart: 16 }}>
+          <Text style={{ marginVertical: 4, fontWeight: "bold" }}>
+            {videoMeta.title}
+          </Text>
+          <Text>{videoMeta.author_name}</Text>
+        </View>
+      </TouchableOpacity>
+    );
+  }
+  return null;
+};
+
+const VideoModal = ({ videoId, onClose }) => {
+  const playerRef = useRef(null);
+  const [completed, setCompleted] = useState(false);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      playerRef.current?.getCurrentTime().then(data => {
+        saveVideoProgress({
+          videoId,
+          completed,
+          timeStamp: data
+        });
+      });
+    }, 2000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [videoId, completed]);
+
+  const onPlayerReady = useCallback(() => {
+    getVideoProgress(videoId).then(data => {
+      if (data.timeStamp) {
+        playerRef.current?.seekTo(data.timeStamp);
+      }
+    });
+  }, [videoId]);
+
+  return (
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: "#000000dd",
+        justifyContent: "center"
+      }}
+    >
+      <View style={{ backgroundColor: "white", padding: 16 }}>
+        <Text onPress={onClose} style={{ textAlign: "right" }}>
+          Close
+        </Text>
+        <YoutubeIframe
+          ref={playerRef}
+          play={true}
+          videoId={videoId}
+          height={250}
+          onReady={onPlayerReady}
+          onChangeState={state => {
+            if (state === "ended") {
+              setCompleted(true);
+            }
+          }}
+        />
+      </View>
+    </View>
+  );
+};
+
+const saveVideoProgress = ({ videoId, completed, timeStamp }) => {
+  const data = {
+    completed,
+    timeStamp
+  };
+
+  return AsyncStorage.setItem(videoId, JSON.stringify(data));
+};
+
+const getVideoProgress = async videoId => {
+  const json = await AsyncStorage.getItem(videoId);
+  if (json) {
+    return JSON.parse(json);
+  }
+  return {
+    completed: false,
+    timeStamp: 0
+  };
+};
+
+export default App;
+```
