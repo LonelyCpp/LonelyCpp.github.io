@@ -355,6 +355,10 @@ const ProgressBar = ({ progress }) => {
 
 ### Final Result
 
+<video width="538" height="1038" controls="controls">
+  <source src="../assets/rn_yt_3.mp4" type="video/mp4">
+</video>
+
 ```javascript
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import {
@@ -433,7 +437,6 @@ const getProgress = async () => {
       completed += 1;
     }
   }
-
   return completed / total;
 };
 
