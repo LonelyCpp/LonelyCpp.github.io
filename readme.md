@@ -6,4 +6,4 @@ The love for programming keeps me awake at night, experimenting random stuff tha
 
 ## Index
 
-1. [A better way to integrate youtube into react native](./pages/rn_youtube.html)
+1. [A better way to integrate youtube into react native](./pages/rn_youtube.md)
