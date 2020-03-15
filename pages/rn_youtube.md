@@ -36,6 +36,8 @@ Thats it!
 
 Lets make an app that has a youtube video on top which the user can play -
 
+{% raw  %}
+
 ```javascript
 import React from "react";
 import { SafeAreaView } from "react-native";
@@ -48,9 +50,10 @@ const App = () => {
     </SafeAreaView>
   );
 };
-
 export default App;
 ```
+
+{% endraw %}
 
 Thats it! It really is that simple and it looks exactly the same on both platforms!
 
@@ -87,6 +90,8 @@ const videoSeries = [
 
 (`App` component)
 
+{% raw  %}
+
 ```JSX
 <FlatList
   contentContainerStyle={{margin: 16}}
@@ -105,7 +110,11 @@ const videoSeries = [
 />
 ```
 
+{% endraw  %}
+
 To get the thumbnail, title and author use the `getYoutubeMeta` function provided by the package. As it returns a promise while it makes the API call, we will use a state variable to hold the data and render it when the promise is resolved. (A loading state could be added here)
+
+{% raw  %}
 
 ```JSX
 const VideoItem = ({videoId, onPress}) => {
@@ -140,6 +149,8 @@ const VideoItem = ({videoId, onPress}) => {
   return null;
 };
 ```
+
+{% endraw  %}
 
 ![screenshot](../assets/rn_yt_2.png?raw=true)
 
