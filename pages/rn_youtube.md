@@ -185,6 +185,8 @@ Modal -
 </Modal>
 ```
 
+{% raw  %}
+
 ```js
 const VideoModal = ({ videoId, onClose }) => {
   const playerRef = useRef(null);
@@ -212,6 +214,8 @@ const VideoModal = ({ videoId, onClose }) => {
   );
 };
 ```
+
+{% endraw  %}
 
 #### Persist where the user last left the video
 
@@ -344,6 +348,7 @@ useEffect(() => {
 ```
 
 Now make a simple component to render this progress fraction as a progress bar.
+{% raw  %}
 
 ```javascript
 const ProgressBar = ({ progress }) => {
@@ -362,11 +367,15 @@ const ProgressBar = ({ progress }) => {
 };
 ```
 
+{% endraw  %}
+
 ### Final Result
 
-<video width="134" height="295" controls="controls">
+<video width="269" height="590" controls="controls">
   <source src="../assets/rn_yt_3.mp4" type="video/mp4">
 </video>
+
+{% raw  %}
 
 ```javascript
 import React, { useState, useEffect, useCallback, useRef } from "react";
@@ -576,3 +585,5 @@ const getVideoProgress = async videoId => {
 
 export default App;
 ```
+
+{% endraw  %}
