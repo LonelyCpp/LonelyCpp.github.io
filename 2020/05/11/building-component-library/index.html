@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Building a UI component library for a product. &middot; Ananthu P Kanive</title>
+        <meta name="description" content="Building a component library is a very important milestone in a products life-cycle. It usually isn’t the first thing anyone talks about in the early stages of a product. Startups usually don’t even hire designers, they give that responsibility to front end or mobile developers to come up with a clean user interface owing to the fact that they might have worked with designers in the past and have picked up on some of the UI/UX knowledge.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.70.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Building a UI component library for a product.">
+<meta property="og:description" content="Building a component library is a very important milestone in a products life-cycle. It usually isn’t the first thing anyone talks about in the early stages of a product. Startups usually don’t even hire designers, they give that responsibility to front end or mobile developers to come up with a clean user interface owing to the fact that they might have worked with designers in the past and have picked up on some of the UI/UX knowledge.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lonelycpp.github.io/2020/05/11/building-component-library/">
+        <link rel="stylesheet" href="https://lonelycpp.github.io/dist/site.css">
+        <link rel="stylesheet" href="https://lonelycpp.github.io/dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-165995640-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Mobile Developer" href="https://lonelycpp.github.io/">Mobile Developer</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://lonelycpp.github.io/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/LonelyCpp" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/3262983/lonelycpp" rel="me">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://linkedin.com/in/ananthu-kanive-18376b61/" rel="me">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:ananthu.kanive6@gmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Projects" href="https://github.com/LonelyCpp">Projects</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="https://linkedin.com/in/ananthu-kanive-18376b61/">Contact</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Building a UI component library for a product.</h1>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2020-05-11" itemprop="datePublished">Mon, May 11, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">Ananthu P Kanive</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <p>Building a component library is a very important milestone in a products life-cycle. It usually isn’t the first thing anyone talks about in the early stages of a product. Startups usually don’t even hire designers, they give that responsibility to front end or mobile developers to come up with a clean user interface owing to the fact that they might have worked with designers in the past and have picked up on some of the UI/UX knowledge.</p>
+<p>Developers usually aren’t keen on building radically different user interfaces, rather they like to go with the “standard”. There are a ton of tooling and open source support for popular design guidelines like the material design. Every platform has a material design theme to it. It&rsquo;s everywhere. VS Code, websites, mobile apps, and everything that developers build in their free time.</p>
+<p>So it&rsquo;s easy to jump on the open source component library, or CSS framework bandwagon only to realize that the end product looks exactly like a ton of other generic apps out there. In startups, they usually don&rsquo;t follow any of these popular design guidelines to make the product stand out. <em><strong>BOOM</strong></em> - spaghetti UI code. Divs with weird css, components with custom styles and injected styles. Everything is now coded as a minion.</p>
+<p>When a company grows, it quickly realizes that its UI is a mess. When the devs are afraid to open a file, you know something’s seriously wrong. Time to build a custom component library.</p>
+<p>Here are a few guideline that I follow when building component libraries or new components in general.</p>
+<h2 id="have-a-plan">Have A Plan</h2>
+<p>Before making a component library, plan it out. Don’t hastily jump into it. Think about what components are already in the product. What is not consistent? What could have been a shared element? Make a list of some very commonly used components that needs to be standardized throughout the product. (eg - A Primary Button)</p>
+<p>An important point would be to think of all the items that will definitely not be used. The product has no plans on supporting multiple themes, ever? Don&rsquo;t build a theme system. The product doesn&rsquo;t want to show loaders inside buttons? Don&rsquo;t build loading buttons. Period.</p>
+<h2 id="involve-the-design-team">Involve the Design Team</h2>
+<p>There’s a good change that the UI/UX team has a component library of their own. Involve them in the process and come up with a plan on how a component library must be built. There is no point in making a UI component library without involving the design team. The components will be used not only by the devs to make building features faster, but need to be used by the designers to design features with existing components.</p>
+<h2 id="make-style-immutable-with-ui-states">Make Style Immutable with UI states</h2>
+<p>When making a component library for a specific product, there is more clarity on how elements need to look. The product will have a set of theme colors that needs to be used across the board. The component itself will have complete control over its appearance. The parent component will have no control over how the component is styled whatsoever.</p>
+<p>In react / react native, the <code>style</code> prop is used to define the styles of a component. A custom component is usually designed to take a prop called <code>containerStyles</code> (or something similar) that overrides the component default style. When the parent wants a component that has a non-standard color, just pass in a containerStyle object, right? Wrong! Non standard components should not be allowed. This should be avoided at all costs. It will only lead to spaghetti code.</p>
+<p>Instead, the components just need to take in states or modes. The appearance of the component is determined by the component based on this state. For example, a button can have a state called <code>type</code> which can be primary or secondary. What this means is that the parent is asking for a “primary button” and does not care about how it looks. The button component itself will have all the styles required for the states.</p>
+<figure>
+    <img src="/cmp_lib/ui_states.png"/> 
+</figure>
+
+<p>Any extra additions in the future needs to be treated as a design decision and can be easily accommodated later as the style is completely controlled by the component. Just another style state to account for.</p>
+<h2 id="data">Data</h2>
+<p>UI components shouldn’t really worry about data. It should only accept final forms of data. Data manipulation should be done elsewhere and not in the component. Components should focus on displaying data exactly as it is given to them.</p>
+<h2 id="ui-documentation">UI Documentation</h2>
+<p>Documenting UI components are better done visually. Storybook is a great example of an awesome UI documentation tool. Create a system where anyone can see how a component looks like in isolation. Make a catalogue of different combinations of UI states that a component can appear in. Storybook has “knobs” that can dynamically change UI states, controlled by whoever is reading the documentation.</p>
+<figure>
+    <img src="/cmp_lib/chip.png"/> 
+</figure>
+
+<p>A component library that is implemented properly will be easy to use, easy to maintain and much easier to teach given the whole thing is visually documented. The outcome of this whole process should be focused on the benefits it can offer in the future. It makes the whole product feel more mature and familiar. A robust component library can cut down UI development time of new features or redesigns by a significant margin. It can help identify patterns that don&rsquo;t match the product as a whole.</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Building%20a%20UI%20component%20library%20for%20a%20product.&url=https%3a%2f%2flonelycpp.github.io%2f2020%2f05%2f11%2fbuilding-component-library%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2flonelycpp.github.io%2f2020%2f05%2f11%2fbuilding-component-library%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Building%20a%20UI%20component%20library%20for%20a%20product.&url=https%3a%2f%2flonelycpp.github.io%2f2020%2f05%2f11%2fbuilding-component-library%2f&summary="
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;">
+               <i class="fa fa-linkedin"></i>
+               <span class="hidden">LinkedIn</span>
+            </a>
+        
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Mobile Developer" href="https://lonelycpp.github.io/">Mobile Developer</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://lonelycpp.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://lonelycpp.github.io/js/jquery.fitvids.js"></script>
+        <script src="https://lonelycpp.github.io/js/scripts.js"></script>
+    </body>
+</html>
+

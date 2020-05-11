@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Ananthu P Kanive</copyright>
-    <lastBuildDate>Sun, 15 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://lonelycpp.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building a UI component library for a product.</title>
+      <link>https://lonelycpp.github.io/2020/05/11/building-component-library/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lonelycpp.github.io/2020/05/11/building-component-library/</guid>
+      <description>Building a component library is a very important milestone in a products life-cycle. It usually isn’t the first thing anyone talks about in the early stages of a product. Startups usually don’t even hire designers, they give that responsibility to front end or mobile developers to come up with a clean user interface owing to the fact that they might have worked with designers in the past and have picked up on some of the UI/UX knowledge.</description>
+    </item>
     
     <item>
       <title>A better way to integrate youtube into react native</title>
