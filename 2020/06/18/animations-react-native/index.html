@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>React Native Animated &middot; Ananthu P Kanive</title>
+        <meta name="description" content="React Native comes with an awesome Animated API to create smooth and performant animations in your app. It is included with react native which means no dependencies or installations with great cross platform support!
+  It&rsquo;s already amazing.
+I will be using some simple functions from the Animated API to get you started, after which reading the official documentation here will make much more sense.
+ Animated.Value  Holds an animation state.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.70.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="React Native Animated">
+<meta property="og:description" content="React Native comes with an awesome Animated API to create smooth and performant animations in your app. It is included with react native which means no dependencies or installations with great cross platform support!
+  It&rsquo;s already amazing.
+I will be using some simple functions from the Animated API to get you started, after which reading the official documentation here will make much more sense.
+ Animated.Value  Holds an animation state.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lonelycpp.github.io/2020/06/18/animations-react-native/">
+        <link rel="stylesheet" href="https://lonelycpp.github.io/dist/site.css">
+        <link rel="stylesheet" href="https://lonelycpp.github.io/dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-165995640-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Mobile Developer" href="https://lonelycpp.github.io/">Mobile Developer</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://lonelycpp.github.io/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/LonelyCpp" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/3262983/lonelycpp" rel="me">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://linkedin.com/in/ananthu-kanive-18376b61/" rel="me">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:ananthu.kanive6@gmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Projects" href="https://github.com/LonelyCpp">Projects</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="https://linkedin.com/in/ananthu-kanive-18376b61/">Contact</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">React Native Animated</h1>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2020-06-18" itemprop="datePublished">Thu, Jun 18, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">Ananthu P Kanive</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <p>React Native comes with an awesome <a href="https://reactnative.dev/docs/animated">Animated</a> API to create smooth and performant animations in your app. It is included with react native which means <strong>no dependencies</strong> or installations with great cross platform support!</p>
+<figure>
+    <img src="/rn_animated/rn_animated.gif" width="200" height="200"/> 
+</figure>
+
+<p>It&rsquo;s already amazing.</p>
+<p>I will be using some simple functions from the Animated API to get you started, after which reading the official documentation <a href="https://reactnative.dev/docs/animations">here</a> will make much more sense.</p>
+<ol>
+<li><code>Animated.Value</code>
+<ul>
+<li>Holds an animation state.</li>
+<li>It is always a javascript Number</li>
+<li>Animations <em>react</em> to changes in this value</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><code>Animated.View</code>
+<ul>
+<li>A component that can be animated</li>
+<li>This view <em>reacts</em> to changes in an <code>Animated.Value</code></li>
+<li>Behaves exactly like a normal <code>&lt;View /&gt;</code> but with superpowers</li>
+</ul>
+</li>
+</ol>
+<ol start="3">
+<li><code>Animated.timing</code>
+<ul>
+<li><em>tweens</em> an animated value to a final value</li>
+<li>takes in config like duration, easing, etc.</li>
+</ul>
+</li>
+</ol>
+<ol start="4">
+<li><code>useRef</code>
+<ul>
+<li>it returns a mutable object whose value will not change across re-renders.</li>
+<li>it holds its value in the <code>.current</code> property</li>
+</ul>
+</li>
+</ol>
+<h2 id="setup">Setup</h2>
+<ol>
+<li>create a ref object using <code>useRef</code></li>
+<li>put an animated value with some initial value in the ref object</li>
+<li>pick a view you want to animate, and wrap it in an <code>Animated.View</code></li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-JSX" data-lang="JSX"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useRef</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react&#34;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">View</span><span class="p">,</span> <span class="nx">Animated</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-native&#34;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">anim</span> <span class="o">=</span> <span class="nx">useRef</span><span class="p">(</span><span class="k">new</span> <span class="nx">Animated</span><span class="p">.</span><span class="nx">Value</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}}&gt;</span>
+      <span class="p">&lt;</span><span class="nt">Animated</span><span class="na">.View</span><span class="p">&gt;</span>
+       <span class="p">{</span><span class="cm">/* Any component that needs to be animated */</span><span class="p">}</span>
+      <span class="o">&lt;</span><span class="err">/Animated.View&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+  <span class="p">);</span>
+<span class="p">};</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">app</span><span class="p">;</span>
+</code></pre></div><hr>
+<h2 id="the-heartbeat">The Heartbeat</h2>
+<p>A heartbeat animation like this has 3 main steps</p>
+<ol>
+<li>increase size</li>
+<li>go back to original size</li>
+<li>loop back to step 1</li>
+</ol>
+<p>Translating this to react native looks something like this -</p>
+<h3 id="modifying-size">Modifying size</h3>
+<p>To increase the size based on a factor, react native has a transform property called &ldquo;scale&rdquo; in View styles. A <code>scale</code> value of <code>2</code> means the element will be enlarged to twice it&rsquo;s size.</p>
+<p>eg. <code>&lt;View style={{transform: [scale: 2]}}&gt; {...} &lt;/View&gt;</code></p>
+<h3 id="running-animations-in-sequence">Running animations in sequence</h3>
+<p>The heart beat animation needs to first increase size, then decrease it. <code>Animated.timing</code> is used to do the individual animation. <code>Animated.sequence</code> takes an array of animations and runs them one after the other.</p>
+<p>eg. <code>Animated.sequence([Animated.timing(...), Animated.timing(...),])</code></p>
+<h3 id="making-an-animation-loop">Making an animation loop</h3>
+<p>To make our scale animation loop indefinitely, we must use <code>Animated.loop</code>. It takes an animation and loops it infinitely(by default) or for a set number of times if specified</p>
+<p>eg. <code>Animated.loop(Animated.timing(...))</code></p>
+<h3 id="final-config">Final config</h3>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// makes the sequence loop
+</span><span class="c1"></span><span class="nx">Animated</span><span class="p">.</span><span class="nx">loop</span><span class="p">(</span>
+  <span class="c1">// runs given animations in a sequence
+</span><span class="c1"></span>  <span class="nx">Animated</span><span class="p">.</span><span class="nx">sequence</span><span class="p">([</span>
+    <span class="c1">// increase size
+</span><span class="c1"></span>    <span class="nx">Animated</span><span class="p">.</span><span class="nx">timing</span><span class="p">(</span><span class="nx">anim</span><span class="p">.</span><span class="nx">current</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">toValue</span><span class="o">:</span> <span class="mf">1.2</span><span class="p">,</span>
+      <span class="nx">duration</span><span class="o">:</span> <span class="mi">200</span><span class="p">,</span>
+    <span class="p">}),</span>
+    <span class="c1">// decrease size
+</span><span class="c1"></span>    <span class="nx">Animated</span><span class="p">.</span><span class="nx">timing</span><span class="p">(</span><span class="nx">anim</span><span class="p">.</span><span class="nx">current</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">toValue</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nx">duration</span><span class="o">:</span> <span class="mi">200</span><span class="p">,</span>
+    <span class="p">}),</span>
+  <span class="p">])</span>
+<span class="p">).</span><span class="nx">start</span><span class="p">();</span>
+</code></pre></div><div
+  data-snack-id=@ananthu.kanive/heartbeat
+  data-snack-platform="web"
+  data-snack-preview="true"
+  data-snack-theme="light"
+  style="
+    overflow: hidden;
+    background: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    height: 505px;
+    width: 100%;
+  "
+></div>
+<script async src="https://snack.expo.io/embed.js"></script>
+
+<hr>
+<h2 id="the-shake">The Shake</h2>
+<p>A shake animation is usually used to denote an error state. MacOS uses this in a lot of places when the user does something wrong like an incorrect password. A shake animation is very similar to the heartbeat animation above. You can try to breakdown the animation into smaller steps yourself before proceeding.</p>
+<p>4 main steps -</p>
+<ol>
+<li>move element to the left a tiny bit</li>
+<li>move element to the right a tiny bit</li>
+<li>move element back the the original position</li>
+<li>loop 2 times (increase this number for a longer duration)</li>
+</ol>
+<h3 id="moving-an-element-horizontally">moving an element horizontally</h3>
+<p>To move an element horizontally, react native has a transform property called &ldquo;translateX&rdquo; in View styles. A <code>translateX</code> value of <code>2</code> means the element will be moved to the right by 2 units and -ve values move it to the left.</p>
+<p>eg. <code>&lt;View style={{transform: [translateX: 2]}}&gt; {...} &lt;/View&gt;</code></p>
+<h3 id="final-config-1">Final config</h3>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// makes the sequence loop
+</span><span class="c1"></span><span class="nx">Animated</span><span class="p">.</span><span class="nx">loop</span><span class="p">(</span>
+  <span class="c1">// runs the animation array in sequence
+</span><span class="c1"></span>  <span class="nx">Animated</span><span class="p">.</span><span class="nx">sequence</span><span class="p">([</span>
+    <span class="c1">// shift element to the left by 2 units
+</span><span class="c1"></span>    <span class="nx">Animated</span><span class="p">.</span><span class="nx">timing</span><span class="p">(</span><span class="nx">anim</span><span class="p">.</span><span class="nx">current</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">toValue</span><span class="o">:</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span>
+      <span class="nx">duration</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span>
+    <span class="p">}),</span>
+    <span class="c1">// shift element to the right by 2 units
+</span><span class="c1"></span>    <span class="nx">Animated</span><span class="p">.</span><span class="nx">timing</span><span class="p">(</span><span class="nx">anim</span><span class="p">.</span><span class="nx">current</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">toValue</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+      <span class="nx">duration</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span>
+    <span class="p">}),</span>
+    <span class="c1">// bring the element back to its original position
+</span><span class="c1"></span>    <span class="nx">Animated</span><span class="p">.</span><span class="nx">timing</span><span class="p">(</span><span class="nx">anim</span><span class="p">.</span><span class="nx">current</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">toValue</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="nx">duration</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span>
+    <span class="p">}),</span>
+  <span class="p">]),</span>
+  <span class="c1">// loops the above animation config 2 times
+</span><span class="c1"></span>  <span class="p">{</span> <span class="nx">iterations</span><span class="o">:</span> <span class="mi">2</span> <span class="p">}</span>
+<span class="p">).</span><span class="nx">start</span><span class="p">();</span>
+</code></pre></div><div
+  data-snack-id=@ananthu.kanive/shake
+  data-snack-platform="web"
+  data-snack-preview="true"
+  data-snack-theme="light"
+  style="
+    overflow: hidden;
+    background: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    height: 505px;
+    width: 100%;
+  "
+></div>
+<script async src="https://snack.expo.io/embed.js"></script>
+
+<hr>
+<p>The <a href="https://reactnative.dev/docs/animated">documentation</a> will be easier to follow if you are comfortable with smaller animations and the basic Animated APIs.</p>
+<p>The key is to breakdown your animations into smaller steps and thinking of them in terms of being small <code>Animated.timing</code> components interacting with each other. Intermediate animated APIs like interpolate, easing, gestures, etc provide a lot of control over animations in react native.</p>
+<p>Reach out if you&rsquo;d like more of such content! :)</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=React%20Native%20Animated&url=https%3a%2f%2flonelycpp.github.io%2f2020%2f06%2f18%2fanimations-react-native%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2flonelycpp.github.io%2f2020%2f06%2f18%2fanimations-react-native%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=React%20Native%20Animated&url=https%3a%2f%2flonelycpp.github.io%2f2020%2f06%2f18%2fanimations-react-native%2f&summary="
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;">
+               <i class="fa fa-linkedin"></i>
+               <span class="hidden">LinkedIn</span>
+            </a>
+        
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Mobile Developer" href="https://lonelycpp.github.io/">Mobile Developer</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://lonelycpp.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://lonelycpp.github.io/js/jquery.fitvids.js"></script>
+        <script src="https://lonelycpp.github.io/js/scripts.js"></script>
+    </body>
+</html>
+
