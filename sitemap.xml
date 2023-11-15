@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://lonelycpp.github.io/</loc>
-    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lonelycpp.github.io/2023/11/15/observables-in-a-reactive-world/</loc>
+    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://lonelycpp.github.io/post/</loc>
-    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://lonelycpp.github.io/2020/06/18/animations-react-native/</loc>
     <lastmod>2020-06-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lonelycpp.github.io/2020/05/11/building-component-library/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lonelycpp.github.io/2020/03/15/react-native-youtube/</loc>
     <lastmod>2020-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://lonelycpp.github.io/tags/</loc>
   </url>
-  
 </urlset>

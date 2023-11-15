@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on Mobile Developer</title>
+    <title>Tags on Ananthu Kanive</title>
     <link>https://lonelycpp.github.io/tags/</link>
-    <description>Recent content in Tags on Mobile Developer</description>
+    <description>Recent content in Tags on Ananthu Kanive</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Ananthu P Kanive</copyright>
-    
-	<atom:link href="https://lonelycpp.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>Ananthu P Kanive</copyright><atom:link href="https://lonelycpp.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

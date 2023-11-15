@@ -1,32 +1,63 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>A better way to integrate youtube into react native &middot; Ananthu P Kanive</title>
-        <meta name="description" content="Videos are a great way to communicate with your users. In a customer facing ecosystem, youtube plays a part in growth, brand value and engagement. Uploading a video to youtube is easy, cost effective, easy to advertize and might actually make you money in the long run. Youtube is a household name and users are comfortable clicking on a youtube video.
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>A better way to integrate youtube into react native | Ananthu Kanive</title>
+<meta name="keywords" content="">
+<meta name="description" content="Videos are a great way to communicate with your users. In a customer facing ecosystem, youtube plays a part in growth, brand value and engagement. Uploading a video to youtube is easy, cost effective, easy to advertize and might actually make you money in the long run. Youtube is a household name and users are comfortable clicking on a youtube video.
 When you&rsquo;re building a mobile app, it just makes sense to include youtube.">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.70.0" />
-        <meta name="robots" content="index,follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="A better way to integrate youtube into react native">
-<meta property="og:description" content="Videos are a great way to communicate with your users. In a customer facing ecosystem, youtube plays a part in growth, brand value and engagement. Uploading a video to youtube is easy, cost effective, easy to advertize and might actually make you money in the long run. Youtube is a household name and users are comfortable clicking on a youtube video.
-When you&rsquo;re building a mobile app, it just makes sense to include youtube.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://lonelycpp.github.io/2020/03/15/react-native-youtube/">
-        <link rel="stylesheet" href="https://lonelycpp.github.io/dist/site.css">
-        <link rel="stylesheet" href="https://lonelycpp.github.io/dist/syntax.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        
-        
-        
-        
-    </head>
-    <body>
-        
+<meta name="author" content="">
+<link rel="canonical" href="https://lonelycpp.github.io/2020/03/15/react-native-youtube/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://lonelycpp.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lonelycpp.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lonelycpp.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lonelycpp.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lonelycpp.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
 <script type="application/javascript">
 var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
 var doNotTrack = (dnt == "1" || dnt == "yes");
@@ -39,122 +70,190 @@ if (!doNotTrack) {
 	ga('set', 'anonymizeIp', true);
 	ga('send', 'pageview');
 }
+</script><meta property="og:title" content="A better way to integrate youtube into react native" />
+<meta property="og:description" content="Videos are a great way to communicate with your users. In a customer facing ecosystem, youtube plays a part in growth, brand value and engagement. Uploading a video to youtube is easy, cost effective, easy to advertize and might actually make you money in the long run. Youtube is a household name and users are comfortable clicking on a youtube video.
+When you&rsquo;re building a mobile app, it just makes sense to include youtube." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lonelycpp.github.io/2020/03/15/react-native-youtube/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-03-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-15T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A better way to integrate youtube into react native"/>
+<meta name="twitter:description" content="Videos are a great way to communicate with your users. In a customer facing ecosystem, youtube plays a part in growth, brand value and engagement. Uploading a video to youtube is easy, cost effective, easy to advertize and might actually make you money in the long run. Youtube is a household name and users are comfortable clicking on a youtube video.
+When you&rsquo;re building a mobile app, it just makes sense to include youtube."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://lonelycpp.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "A better way to integrate youtube into react native",
+      "item": "https://lonelycpp.github.io/2020/03/15/react-native-youtube/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "A better way to integrate youtube into react native",
+  "name": "A better way to integrate youtube into react native",
+  "description": "Videos are a great way to communicate with your users. In a customer facing ecosystem, youtube plays a part in growth, brand value and engagement. Uploading a video to youtube is easy, cost effective, easy to advertize and might actually make you money in the long run. Youtube is a household name and users are comfortable clicking on a youtube video.\nWhen you\u0026rsquo;re building a mobile app, it just makes sense to include youtube.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Videos are a great way to communicate with your users. In a customer facing ecosystem, youtube plays a part in growth, brand value and engagement. Uploading a video to youtube is easy, cost effective, easy to advertize and might actually make you money in the long run. Youtube is a household name and users are comfortable clicking on a youtube video.\nWhen you’re building a mobile app, it just makes sense to include youtube. You can put in all sorts of videos in your app like -\npromotional videos tutorials podcasts / periodic content updates React Native The most popular way of embedding a youtube video in react native is to use react-native-youtube.\nThe Problem When you’re writing apps in react native, one of the most important requirements is to make it look consistent across android and iOS. This will be a problem when you want to embed a youtube video in your app using this library.\nIt uses the native YouTube Android Player API for android and YoutubePlayer-in-WKWebView in iOS. The iOS version is the youtube web player and behaves very different to the android implementation. The android player API is a horrible thing to work with. It has a ton of bugs that causes your app to unexpectedly crash.\nThe Solution Using the web player on both android and iOS versions. The react-native-youtube-iframe library does exactly this.\nIts a wrapper around the youtube iframe API used on the web. It uses the community maintained react-native-webview to drive everything.\nInstalling npm install react-native-webview (you might already have this installed) npm install react-native-youtube-iframe pod install (in the iOS directory) Thats it!\nCode Lets make an app that has a youtube video on top which the user can play -\nimport React from \"react\"; import { SafeAreaView } from \"react-native\"; import YoutubePlayer from \"react-native-youtube-iframe\"; const App = () =\u003e { return ( \u003cSafeAreaView style={{ flex: 1 }}\u003e \u003cYoutubePlayer height={250} videoId={\"sNhhvQGsMEc\"} /\u003e \u003c/SafeAreaView\u003e ); }; export default App; Thats it! It really is that simple and it looks exactly the same on both platforms!\nMultiple components with different videoIds can be in the same page too!\nMORE Lets build a more complicated app with some of the features provided by the library.\nThe app features -\na list of videos persist where the user last left the video track completion progress A List of Videos We can use a flatlist to render a list which will have the video thumbnail, and title of the video.\nCreate a list of videos you’d like to show -\n(global variable)\nconst videoSeries = [ \"DC471a9qrU4\", \"tVCYa_bnITg\", \"K74l26pE4YA\", \"m3OjWNFREJo\", ]; (App component)\n\u003cFlatList contentContainerStyle={{margin: 16}} ListHeaderComponent={ \u003c\u003e \u003cText style={{fontSize: 18, fontWeight: 'bold'}}\u003e 100 Seconds of Code \u003c/Text\u003e \u003c/\u003e } data={videoSeries} renderItem={({item}) =\u003e ( \u003cVideoItem videoId={item} onPress={onVideoPress} /\u003e )} keyExtractor={item =\u003e item} /\u003e To get the thumbnail, title and author use the getYoutubeMeta function provided by the package. As it returns a promise while it makes the API call, we will use a state variable to hold the data and render it when the promise is resolved. (A loading state could be added here)\nconst VideoItem = ({videoId, onPress}) =\u003e { const [videoMeta, setVideoMeta] = useState(null); useEffect(() =\u003e { getYoutubeMeta(videoId).then(data =\u003e { setVideoMeta(data); }); }, [videoId]); if (videoMeta) { return ( \u003cTouchableOpacity onPress={() =\u003e onPress(videoId)} style={{flexDirection: 'row', marginVertical: 16}}\u003e \u003cImage source={{uri: videoMeta.thumbnail_url}} style={{ width: videoMeta.thumbnail_width / 4, height: videoMeta.thumbnail_height / 4, }} /\u003e \u003cView style={{justifyContent: 'center', marginStart: 16}}\u003e \u003cText style={{marginVertical: 4, fontWeight: 'bold'}}\u003e {videoMeta.title} \u003c/Text\u003e \u003cText\u003e{videoMeta.author_name}\u003c/Text\u003e \u003c/View\u003e \u003c/TouchableOpacity\u003e ); } return null; }; Now when the user clicks on the video, the app opens a modal with the youtube player on it.\nUsing react hooks, we can maintain states to manage the modal visibility -\n(App component)\nconst [modalVisible, showModal] = useState(false); const [selectedVideo, setSelectedVideo] = useState(null); const onVideoPress = useCallback((videoId) =\u003e { showModal(true); setSelectedVideo(videoId); }, []); const closeModal = useCallback(() =\u003e showModal(false), []); Modal -\n(App component)\n\u003cModal visible={modalVisible} transparent={true} onRequestClose={closeModal}\u003e \u003cVideoModal videoId={selectedVideo} onClose={closeModal} /\u003e \u003c/Modal\u003e const VideoModal = ({ videoId, onClose }) =\u003e { const playerRef = useRef(null); return ( \u003cView style={{ flex: 1, backgroundColor: \"#000000dd\", justifyContent: \"center\", }} \u003e \u003cView style={{ backgroundColor: \"white\", padding: 16 }}\u003e \u003cText onPress={onClose} style={{ textAlign: \"right\" }}\u003e Close \u003c/Text\u003e \u003cYoutubeIframe ref={playerRef} play={true} videoId={videoId} height={250} /\u003e \u003c/View\u003e \u003c/View\u003e ); }; Persist where the user last left the video Install @react-native-community/async-storage from here\nimport it into your app - import AsyncStorage from '@react-native-community/async-storage';\nTo persist video progress, we can make a map of videoId to its time-stamp and completed status.\neg -\n{ \"DC471a9qrU4\": { \"timeStamp\": 50, \"completed\": false } } We can use AsyncStorage to store and fetch progress in this format -\nconst saveVideoProgress = ({ videoId, completed, timeStamp }) =\u003e { const data = { completed, timeStamp, }; return AsyncStorage.setItem(videoId, JSON.stringify(data)); }; const getVideoProgress = async (videoId) =\u003e { const json = await AsyncStorage.getItem(videoId); if (json) { return JSON.parse(json); } return { completed: false, timeStamp: 0, }; }; Now to periodically update the timestamp, start an interval function that fetches the timestamp in regular intervals. It can be started when the VideoModal component mounts using useEffect. The useEffect function is called once when the component mounts to start the timer which will execute every 2 seconds here. It returns a function that clears the interval when the component is unmounted.\n(VideoModal component)\nconst [completed, setCompleted] = useState(false); useEffect(() =\u003e { const timer = setInterval(() =\u003e { playerRef.current?.getCurrentTime().then((data) =\u003e { saveVideoProgress({ videoId, completed, timeStamp: data, }); }); }, 2000); return () =\u003e { clearInterval(timer); }; }, [videoId, completed]); To seek to the previous timestamp, a callback to player onReady can be used. When the player becomes ready, the last updated timestamp is fetched and the video is set to that time stamp using the seekTo method exposed through the player ref.\n(VideoModal component)\nconst onPlayerReady = useCallback(() =\u003e { getVideoProgress(videoId).then((data) =\u003e { if (data.timeStamp) { playerRef.current?.seekTo(data.timeStamp); } }); }, [videoId]); To know when the player has finished playing a video, the onChangeState callback can be used. It emits a “ended” event when the video reaches the end. On receiving this event, the completed state can be set and stored subsequently in AsyncStorage.\n\u003cYoutubeIframe ref={playerRef} play={true} videoId={videoId} height={250} onReady={onPlayerReady} onChangeState={(state) =\u003e { if (state === \"ended\") { setCompleted(true); } }} /\u003e Track completion progress This will be simple function to query completion status of each video from AsyncStorage.\nconst getProgress = async () =\u003e { const total = videoSeries.length; let completed = 0; for (let i = 0; i \u003c total; i++) { const videoId = videoSeries[i]; const status = await getVideoProgress(videoId); if (status?.completed) { completed += 1; } } return completed / total; }; This function iterates through the videoList and checks if the video was watched to completion. Using the result of this function, we can calculate progress when the modal visibility changes. (since the modal has the actual video player).\nconst [progress, setProgress] = useState(0); useEffect(() =\u003e { getProgress().then((p) =\u003e { setProgress(p); }); }, [modalVisible]); Now make a simple component to render this progress fraction as a progress bar.\nconst ProgressBar = ({ progress }) =\u003e { const width = (progress || 0) + \"%\"; return ( \u003cView style={{ borderWidth: 1, marginVertical: 16 }}\u003e \u003cView style={{ backgroundColor: \"green\", height: 10, width, }} /\u003e \u003c/View\u003e ); }; Final Result import React, { useState, useEffect, useCallback, useRef } from \"react\"; import { SafeAreaView, Text, FlatList, Image, View, TouchableOpacity, Modal, } from \"react-native\"; import YoutubeIframe, { getYoutubeMeta } from \"react-native-youtube-iframe\"; import AsyncStorage from \"@react-native-community/async-storage\"; const videoSeries = [ \"DC471a9qrU4\", \"tVCYa_bnITg\", \"K74l26pE4YA\", \"m3OjWNFREJo\", ]; const App = () =\u003e { const [modalVisible, showModal] = useState(false); const [selectedVideo, setSelectedVideo] = useState(null); const [progress, setProgress] = useState(0); const onVideoPress = useCallback((videoId) =\u003e { showModal(true); setSelectedVideo(videoId); }, []); useEffect(() =\u003e { getProgress().then((p) =\u003e { setProgress(p); }); }, [modalVisible]); const closeModal = useCallback(() =\u003e showModal(false), []); return ( \u003cSafeAreaView style={{ flex: 1 }}\u003e \u003cFlatList contentContainerStyle={{ margin: 16 }} ListHeaderComponent={ \u003c\u003e \u003cText style={{ fontSize: 18, fontWeight: \"bold\" }}\u003e 100 Seconds of Code \u003c/Text\u003e \u003cProgressBar progress={progress * 100} /\u003e \u003c/\u003e } data={videoSeries} renderItem={({ item }) =\u003e ( \u003cVideoItem videoId={item} onPress={onVideoPress} /\u003e )} keyExtractor={(item) =\u003e item} /\u003e \u003cModal visible={modalVisible} transparent={true} onRequestClose={closeModal} \u003e \u003cVideoModal videoId={selectedVideo} onClose={closeModal} /\u003e \u003c/Modal\u003e \u003c/SafeAreaView\u003e ); }; const getProgress = async () =\u003e { const total = videoSeries.length; let completed = 0; for (let i = 0; i \u003c total; i++) { const videoId = videoSeries[i]; const status = await getVideoProgress(videoId); if (status?.completed) { completed += 1; } } return completed / total; }; const ProgressBar = ({ progress }) =\u003e { const width = (progress || 0) + \"%\"; return ( \u003cView style={{ borderWidth: 1, marginVertical: 16 }}\u003e \u003cView style={{ backgroundColor: \"green\", height: 10, width, }} /\u003e \u003c/View\u003e ); }; const VideoItem = ({ videoId, onPress }) =\u003e { const [videoMeta, setVideoMeta] = useState(null); useEffect(() =\u003e { getYoutubeMeta(videoId).then((data) =\u003e { setVideoMeta(data); }); }, [videoId]); if (videoMeta) { return ( \u003cTouchableOpacity onPress={() =\u003e onPress(videoId)} style={{ flexDirection: \"row\", marginVertical: 16 }} \u003e \u003cImage source={{ uri: videoMeta.thumbnail_url }} style={{ width: videoMeta.thumbnail_width / 4, height: videoMeta.thumbnail_height / 4, }} /\u003e \u003cView style={{ justifyContent: \"center\", marginStart: 16 }}\u003e \u003cText style={{ marginVertical: 4, fontWeight: \"bold\" }}\u003e {videoMeta.title} \u003c/Text\u003e \u003cText\u003e{videoMeta.author_name}\u003c/Text\u003e \u003c/View\u003e \u003c/TouchableOpacity\u003e ); } return null; }; const VideoModal = ({ videoId, onClose }) =\u003e { const playerRef = useRef(null); const [completed, setCompleted] = useState(false); useEffect(() =\u003e { const timer = setInterval(() =\u003e { playerRef.current?.getCurrentTime().then((data) =\u003e { saveVideoProgress({ videoId, completed, timeStamp: data, }); }); }, 2000); return () =\u003e { clearInterval(timer); }; }, [videoId, completed]); const onPlayerReady = useCallback(() =\u003e { getVideoProgress(videoId).then((data) =\u003e { if (data.timeStamp) { playerRef.current?.seekTo(data.timeStamp); } }); }, [videoId]); return ( \u003cView style={{ flex: 1, backgroundColor: \"#000000dd\", justifyContent: \"center\", }} \u003e \u003cView style={{ backgroundColor: \"white\", padding: 16 }}\u003e \u003cText onPress={onClose} style={{ textAlign: \"right\" }}\u003e Close \u003c/Text\u003e \u003cYoutubeIframe ref={playerRef} play={true} videoId={videoId} height={250} onReady={onPlayerReady} onChangeState={(state) =\u003e { if (state === \"ended\") { setCompleted(true); } }} /\u003e \u003c/View\u003e \u003c/View\u003e ); }; const saveVideoProgress = ({ videoId, completed, timeStamp }) =\u003e { const data = { completed, timeStamp, }; return AsyncStorage.setItem(videoId, JSON.stringify(data)); }; const getVideoProgress = async (videoId) =\u003e { const json = await AsyncStorage.getItem(videoId); if (json) { return JSON.parse(json); } return { completed: false, timeStamp: 0, }; }; export default App; ",
+  "wordCount" : "1692",
+  "inLanguage": "en",
+  "datePublished": "2020-03-15T00:00:00Z",
+  "dateModified": "2020-03-15T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lonelycpp.github.io/2020/03/15/react-native-youtube/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ananthu Kanive",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lonelycpp.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
 </script>
 
-
-        <div id="wrapper">
-            <header class="site-header">
-                <div class="container">
-                    <div class="site-title-wrapper">
-                        
-                            <h1 class="site-title">
-                                <a title="Mobile Developer" href="https://lonelycpp.github.io/">Mobile Developer</a>
-                            </h1>
-                        
-                        <a class="button-square" href="https://lonelycpp.github.io/index.xml"><i class="fa fa-rss"></i></a>
-                        
-                        
-                        
-                        
-                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/LonelyCpp" rel="me">
-                                <i class="fa fa-github-alt"></i>
-                            </a>
-                        
-                        
-                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/3262983/lonelycpp" rel="me">
-                                <i class="fa fa-stack-overflow"></i>
-                            </a>
-                        
-                        
-                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://linkedin.com/in/ananthu-kanive-18376b61/" rel="me">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        
-                        
-                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:ananthu.kanive6@gmail.com">
-                                <i class="fa fa-envelope"></i>
-                            </a>
-                        
-                    </div>
-
-                    <ul class="site-nav">
-                        
-    <li class="site-nav-item">
-        <a title="Projects" href="https://github.com/LonelyCpp">Projects</a>
-    </li>
-
-    <li class="site-nav-item">
-        <a title="Contact" href="https://linkedin.com/in/ananthu-kanive-18376b61/">Contact</a>
-    </li>
-
-                    </ul>
-                </div>
-            </header>
-
-            <div id="container">
-
-
-<div class="container">
-    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
-        <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">A better way to integrate youtube into react native</h1>
-    
-    <p class="post-date post-line">
-        <span>Published <time datetime="2020-03-15" itemprop="datePublished">Sun, Mar 15, 2020</time></span>
-        <span>by</span>
-        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
-            <span itemprop="name">
-                <a href="#" itemprop="url" rel="author">Ananthu P Kanive</a>
-            </span>
-        </span>
-    </p>
-    
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://lonelycpp.github.io/" accesskey="h" title="Ananthu Kanive (Alt + H)">Ananthu Kanive</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://github.com/LonelyCpp" title="Projects">
+                    <span>Projects</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/ananthu-kanive-18376b61/" title="Contact">
+                    <span>Contact</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
+<main class="main">
 
-        <div class="post-content clearfix" itemprop="articleBody">
+<article class="post-single">
+  <header class="post-header">
     
+    <h1 class="post-title">
+      A better way to integrate youtube into react native
+    </h1>
+    <div class="post-meta"><span title='2020-03-15 00:00:00 +0000 UTC'>Sun, Mar 15, 2020</span>
 
-    <p>Videos are a great way to communicate with your users. In a customer facing ecosystem, youtube plays a part in growth, brand value and engagement. Uploading a video to youtube is easy, cost effective, easy to advertize and might actually make you money in the long run. Youtube is a household name and users are comfortable clicking on a youtube video.</p>
+</div>
+  </header> 
+  <div class="post-content"><p>Videos are a great way to communicate with your users. In a customer facing ecosystem, youtube plays a part in growth, brand value and engagement. Uploading a video to youtube is easy, cost effective, easy to advertize and might actually make you money in the long run. Youtube is a household name and users are comfortable clicking on a youtube video.</p>
 <p>When you&rsquo;re building a mobile app, it just makes sense to include youtube. You can put in all sorts of videos in your app like -</p>
 <ul>
 <li>promotional videos</li>
 <li>tutorials</li>
 <li>podcasts / periodic content updates</li>
 </ul>
-<h2 id="react-native">React Native</h2>
+<h2 id="react-native">React Native<a hidden class="anchor" aria-hidden="true" href="#react-native">#</a></h2>
 <p>The most popular way of embedding a youtube video in react native is to use <code>react-native-youtube</code>.</p>
-<h3 id="the-problem">The Problem</h3>
+<h3 id="the-problem">The Problem<a hidden class="anchor" aria-hidden="true" href="#the-problem">#</a></h3>
 <p>When you&rsquo;re writing apps in react native, one of the most important requirements is to make it look consistent across android and iOS. This will be a problem when you want to embed a youtube video in your app using this library.</p>
 <p>It uses the native <code>YouTube Android Player API</code> for android and <code>YoutubePlayer-in-WKWebView</code> in iOS. The iOS version is the youtube web player and behaves very different to the android implementation. The android player API is a horrible thing to work with. It has a ton of bugs that causes your app to unexpectedly crash.</p>
-<h3 id="the-solution">The Solution</h3>
+<h3 id="the-solution">The Solution<a hidden class="anchor" aria-hidden="true" href="#the-solution">#</a></h3>
 <p>Using the web player on both android and iOS versions. The <a href="https://github.com/LonelyCpp/react-native-youtube-iframe">react-native-youtube-iframe</a> library does exactly this.</p>
 <p>Its a wrapper around the youtube iframe API used on the web. It uses the community maintained <code>react-native-webview</code> to drive everything.</p>
-<h4 id="installing">Installing</h4>
+<h4 id="installing">Installing<a hidden class="anchor" aria-hidden="true" href="#installing">#</a></h4>
 <ol>
 <li><code>npm install react-native-webview</code> (you might already have this installed)</li>
 <li><code>npm install react-native-youtube-iframe</code></li>
 <li><code>pod install</code> (in the iOS directory)</li>
 </ol>
 <p>Thats it!</p>
-<h4 id="code">Code</h4>
+<h4 id="code">Code<a hidden class="anchor" aria-hidden="true" href="#code">#</a></h4>
 <p>Lets make an app that has a youtube video on top which the user can play -</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s2">&#34;react&#34;</span><span class="p">;</span>
-<span class="kr">import</span> <span class="p">{</span> <span class="nx">SafeAreaView</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-native&#34;</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">YoutubePlayer</span> <span class="nx">from</span> <span class="s2">&#34;react-native-youtube-iframe&#34;</span><span class="p">;</span>
-
-<span class="kr">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="o">&lt;</span><span class="nx">SafeAreaView</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}}</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="nx">YoutubePlayer</span> <span class="nx">height</span><span class="o">=</span><span class="p">{</span><span class="mi">250</span><span class="p">}</span> <span class="nx">videoId</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;sNhhvQGsMEc&#34;</span><span class="p">}</span> <span class="o">/&gt;</span>
-    <span class="o">&lt;</span><span class="err">/SafeAreaView&gt;</span>
-  <span class="p">);</span>
-<span class="p">};</span>
-<span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
-</code></pre></div><p>Thats it! It really is that simple and it looks exactly the same on both platforms!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s2">&#34;react&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">SafeAreaView</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-native&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">YoutubePlayer</span> <span class="nx">from</span> <span class="s2">&#34;react-native-youtube-iframe&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nx">SafeAreaView</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}}</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="nx">YoutubePlayer</span> <span class="nx">height</span><span class="o">=</span><span class="p">{</span><span class="mi">250</span><span class="p">}</span> <span class="nx">videoId</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;sNhhvQGsMEc&#34;</span><span class="p">}</span> <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="err">/SafeAreaView&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
+</span></span></code></pre></div><p>Thats it! It really is that simple and it looks exactly the same on both platforms!</p>
 <p>Multiple <code>&lt;YoutubePlayer /&gt;</code> components with different <code>videoId</code>s can be in the same page too!</p>
-<p><img src="/rn_youtube/rn_yt_1.png" alt="screenshot"></p>
+<p><img loading="lazy" src="/rn_youtube/rn_yt_1.png" alt="screenshot"  />
+</p>
 <hr>
-<h1 id="more">MORE</h1>
+<h1 id="more">MORE<a hidden class="anchor" aria-hidden="true" href="#more">#</a></h1>
 <p>Lets build a more complicated app with some of the features provided by the library.</p>
 <p>The app features -</p>
 <ul>
@@ -162,495 +261,510 @@ if (!doNotTrack) {
 <li>persist where the user last left the video</li>
 <li>track completion progress</li>
 </ul>
-<h4 id="a-list-of-videos">A List of Videos</h4>
+<h4 id="a-list-of-videos">A List of Videos<a hidden class="anchor" aria-hidden="true" href="#a-list-of-videos">#</a></h4>
 <p>We can use a <code>flatlist</code> to render a list which will have the video thumbnail, and title of the video.</p>
 <p>Create a list of videos you&rsquo;d like to show -</p>
 <p>(global variable)</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">videoSeries</span> <span class="o">=</span> <span class="p">[</span>
-  <span class="s2">&#34;DC471a9qrU4&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;tVCYa_bnITg&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;K74l26pE4YA&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;m3OjWNFREJo&#34;</span><span class="p">,</span>
-<span class="p">];</span>
-</code></pre></div><p>(<code>App</code> component)</p>
-<div class="highlight"><pre class="chroma"><code class="language-JSX" data-lang="JSX"><span class="p">&lt;</span><span class="nt">FlatList</span>
-  <span class="na">contentContainerStyle</span><span class="o">=</span><span class="p">{{</span><span class="nx">margin</span><span class="o">:</span> <span class="mi">16</span><span class="p">}}</span>
-  <span class="na">ListHeaderComponent</span><span class="o">=</span><span class="p">{</span>
-    <span class="o">&lt;&gt;</span>
-      <span class="p">&lt;</span><span class="nt">Text</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">fontSize</span><span class="o">:</span> <span class="mi">18</span><span class="p">,</span> <span class="nx">fontWeight</span><span class="o">:</span> <span class="s1">&#39;bold&#39;</span><span class="p">}}&gt;</span>
-        <span class="mi">100</span> <span class="nx">Seconds</span> <span class="k">of</span> <span class="nx">Code</span>
-      <span class="p">&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
-    <span class="o">&lt;</span><span class="err">/&gt;</span>
-  <span class="p">}</span>
-  <span class="na">data</span><span class="o">=</span><span class="p">{</span><span class="nx">videoSeries</span><span class="p">}</span>
-  <span class="na">renderItem</span><span class="o">=</span><span class="p">{({</span><span class="nx">item</span><span class="p">})</span> <span class="p">=&gt;</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">VideoItem</span> <span class="na">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span> <span class="na">onPress</span><span class="o">=</span><span class="p">{</span><span class="nx">onVideoPress</span><span class="p">}</span> <span class="p">/&gt;</span>
-  <span class="p">)}</span>
-  <span class="na">keyExtractor</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span> <span class="p">=&gt;</span> <span class="nx">item</span><span class="p">}</span>
-<span class="p">/&gt;</span>
-</code></pre></div><p>To get the thumbnail, title and author use the <code>getYoutubeMeta</code> function provided by the package. As it returns a promise while it makes the API call, we will use a state variable to hold the data and render it when the promise is resolved. (A loading state could be added here)</p>
-<div class="highlight"><pre class="chroma"><code class="language-JSX" data-lang="JSX"><span class="kr">const</span> <span class="nx">VideoItem</span> <span class="o">=</span> <span class="p">({</span><span class="nx">videoId</span><span class="p">,</span> <span class="nx">onPress</span><span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">videoMeta</span><span class="p">,</span> <span class="nx">setVideoMeta</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
-  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">getYoutubeMeta</span><span class="p">(</span><span class="nx">videoId</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
-      <span class="nx">setVideoMeta</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-    <span class="p">});</span>
-  <span class="p">},</span> <span class="p">[</span><span class="nx">videoId</span><span class="p">]);</span>
-
-  <span class="k">if</span> <span class="p">(</span><span class="nx">videoMeta</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="p">(</span>
-      <span class="p">&lt;</span><span class="nt">TouchableOpacity</span>
-        <span class="na">onPress</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">onPress</span><span class="p">(</span><span class="nx">videoId</span><span class="p">)}</span>
-        <span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">flexDirection</span><span class="o">:</span> <span class="s1">&#39;row&#39;</span><span class="p">,</span> <span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">16</span><span class="p">}}&gt;</span>
-        <span class="p">&lt;</span><span class="nt">Image</span>
-          <span class="na">source</span><span class="o">=</span><span class="p">{{</span><span class="nx">uri</span><span class="o">:</span> <span class="nx">videoMeta</span><span class="p">.</span><span class="nx">thumbnail_url</span><span class="p">}}</span>
-          <span class="na">style</span><span class="o">=</span><span class="p">{{</span>
-            <span class="nx">width</span><span class="o">:</span> <span class="nx">videoMeta</span><span class="p">.</span><span class="nx">thumbnail_width</span> <span class="o">/</span> <span class="mi">4</span><span class="p">,</span>
-            <span class="nx">height</span><span class="o">:</span> <span class="nx">videoMeta</span><span class="p">.</span><span class="nx">thumbnail_height</span> <span class="o">/</span> <span class="mi">4</span><span class="p">,</span>
-          <span class="p">}}</span>
-        <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">justifyContent</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="nx">marginStart</span><span class="o">:</span> <span class="mi">16</span><span class="p">}}&gt;</span>
-          <span class="p">&lt;</span><span class="nt">Text</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span> <span class="nx">fontWeight</span><span class="o">:</span> <span class="s1">&#39;bold&#39;</span><span class="p">}}&gt;</span>
-            <span class="p">{</span><span class="nx">videoMeta</span><span class="p">.</span><span class="nx">title</span><span class="p">}</span>
-          <span class="p">&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">Text</span><span class="p">&gt;{</span><span class="nx">videoMeta</span><span class="p">.</span><span class="nx">author_name</span><span class="p">}&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
-      <span class="p">&lt;/</span><span class="nt">TouchableOpacity</span><span class="p">&gt;</span>
-    <span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
-<span class="p">};</span>
-</code></pre></div><p><img src="/rn_youtube/rn_yt_2.png" alt="screenshot"></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">videoSeries</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;DC471a9qrU4&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;tVCYa_bnITg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;K74l26pE4YA&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;m3OjWNFREJo&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">];</span>
+</span></span></code></pre></div><p>(<code>App</code> component)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-JSX" data-lang="JSX"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">FlatList</span>
+</span></span><span class="line"><span class="cl">  <span class="na">contentContainerStyle</span><span class="o">=</span><span class="p">{{</span><span class="nx">margin</span><span class="o">:</span> <span class="mi">16</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">ListHeaderComponent</span><span class="o">=</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">Text</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">fontSize</span><span class="o">:</span> <span class="mi">18</span><span class="p">,</span> <span class="nx">fontWeight</span><span class="o">:</span> <span class="s1">&#39;bold&#39;</span><span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="mi">100</span> <span class="nx">Seconds</span> <span class="k">of</span> <span class="nx">Code</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">data</span><span class="o">=</span><span class="p">{</span><span class="nx">videoSeries</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">renderItem</span><span class="o">=</span><span class="p">{({</span><span class="nx">item</span><span class="p">})</span> <span class="p">=&gt;</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">VideoItem</span> <span class="na">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span> <span class="na">onPress</span><span class="o">=</span><span class="p">{</span><span class="nx">onVideoPress</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">keyExtractor</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span> <span class="p">=&gt;</span> <span class="nx">item</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span></code></pre></div><p>To get the thumbnail, title and author use the <code>getYoutubeMeta</code> function provided by the package. As it returns a promise while it makes the API call, we will use a state variable to hold the data and render it when the promise is resolved. (A loading state could be added here)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-JSX" data-lang="JSX"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">VideoItem</span> <span class="o">=</span> <span class="p">({</span><span class="nx">videoId</span><span class="p">,</span> <span class="nx">onPress</span><span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">videoMeta</span><span class="p">,</span> <span class="nx">setVideoMeta</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">getYoutubeMeta</span><span class="p">(</span><span class="nx">videoId</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">setVideoMeta</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="p">[</span><span class="nx">videoId</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">videoMeta</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">TouchableOpacity</span>
+</span></span><span class="line"><span class="cl">        <span class="na">onPress</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">onPress</span><span class="p">(</span><span class="nx">videoId</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">flexDirection</span><span class="o">:</span> <span class="s1">&#39;row&#39;</span><span class="p">,</span> <span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">16</span><span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">Image</span>
+</span></span><span class="line"><span class="cl">          <span class="na">source</span><span class="o">=</span><span class="p">{{</span><span class="nx">uri</span><span class="o">:</span> <span class="nx">videoMeta</span><span class="p">.</span><span class="nx">thumbnail_url</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl">          <span class="na">style</span><span class="o">=</span><span class="p">{{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">width</span><span class="o">:</span> <span class="nx">videoMeta</span><span class="p">.</span><span class="nx">thumbnail_width</span> <span class="o">/</span> <span class="mi">4</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">height</span><span class="o">:</span> <span class="nx">videoMeta</span><span class="p">.</span><span class="nx">thumbnail_height</span> <span class="o">/</span> <span class="mi">4</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">View</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">justifyContent</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="nx">marginStart</span><span class="o">:</span> <span class="mi">16</span><span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">Text</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span> <span class="nx">fontWeight</span><span class="o">:</span> <span class="s1">&#39;bold&#39;</span><span class="p">}}&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span><span class="nx">videoMeta</span><span class="p">.</span><span class="nx">title</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">Text</span><span class="p">&gt;{</span><span class="nx">videoMeta</span><span class="p">.</span><span class="nx">author_name</span><span class="p">}&lt;/</span><span class="nt">Text</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">View</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">TouchableOpacity</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p><img loading="lazy" src="/rn_youtube/rn_yt_2.png" alt="screenshot"  />
+</p>
 <p>Now when the user clicks on the video, the app opens a modal with the youtube player on it.</p>
 <p>Using react hooks, we can maintain states to manage the modal visibility -</p>
 <p>(<code>App</code> component)</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="p">[</span><span class="nx">modalVisible</span><span class="p">,</span> <span class="nx">showModal</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
-<span class="kr">const</span> <span class="p">[</span><span class="nx">selectedVideo</span><span class="p">,</span> <span class="nx">setSelectedVideo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
-
-<span class="kr">const</span> <span class="nx">onVideoPress</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">((</span><span class="nx">videoId</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">showModal</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
-  <span class="nx">setSelectedVideo</span><span class="p">(</span><span class="nx">videoId</span><span class="p">);</span>
-<span class="p">},</span> <span class="p">[]);</span>
-
-<span class="kr">const</span> <span class="nx">closeModal</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">showModal</span><span class="p">(</span><span class="kc">false</span><span class="p">),</span> <span class="p">[]);</span>
-</code></pre></div><p>Modal -</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">[</span><span class="nx">modalVisible</span><span class="p">,</span> <span class="nx">showModal</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">[</span><span class="nx">selectedVideo</span><span class="p">,</span> <span class="nx">setSelectedVideo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">onVideoPress</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">((</span><span class="nx">videoId</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">showModal</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">setSelectedVideo</span><span class="p">(</span><span class="nx">videoId</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span> <span class="p">[]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">closeModal</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">showModal</span><span class="p">(</span><span class="kc">false</span><span class="p">),</span> <span class="p">[]);</span>
+</span></span></code></pre></div><p>Modal -</p>
 <p>(<code>App</code> component)</p>
-<div class="highlight"><pre class="chroma"><code class="language-JSX" data-lang="JSX"><span class="p">&lt;</span><span class="nt">Modal</span>
-  <span class="na">visible</span><span class="o">=</span><span class="p">{</span><span class="nx">modalVisible</span><span class="p">}</span>
-  <span class="na">transparent</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span>
-  <span class="na">onRequestClose</span><span class="o">=</span><span class="p">{</span><span class="nx">closeModal</span><span class="p">}&gt;</span>
-  <span class="p">&lt;</span><span class="nt">VideoModal</span> <span class="na">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">selectedVideo</span><span class="p">}</span> <span class="na">onClose</span><span class="o">=</span><span class="p">{</span><span class="nx">closeModal</span><span class="p">}</span> <span class="p">/&gt;</span>
-<span class="p">&lt;/</span><span class="nt">Modal</span><span class="p">&gt;</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">const</span> <span class="nx">VideoModal</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">videoId</span><span class="p">,</span> <span class="nx">onClose</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">playerRef</span> <span class="o">=</span> <span class="nx">useRef</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="o">&lt;</span><span class="nx">View</span>
-      <span class="nx">style</span><span class="o">=</span><span class="p">{{</span>
-        <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;#000000dd&#34;</span><span class="p">,</span>
-        <span class="nx">justifyContent</span><span class="o">:</span> <span class="s2">&#34;center&#34;</span><span class="p">,</span>
-      <span class="p">}}</span>
-    <span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="nx">View</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;white&#34;</span><span class="p">,</span> <span class="nx">padding</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="nx">Text</span> <span class="nx">onPress</span><span class="o">=</span><span class="p">{</span><span class="nx">onClose</span><span class="p">}</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">textAlign</span><span class="o">:</span> <span class="s2">&#34;right&#34;</span> <span class="p">}}</span><span class="o">&gt;</span>
-          <span class="nx">Close</span>
-        <span class="o">&lt;</span><span class="err">/Text&gt;</span>
-        <span class="o">&lt;</span><span class="nx">YoutubeIframe</span>
-          <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">playerRef</span><span class="p">}</span>
-          <span class="nx">play</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span>
-          <span class="nx">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">videoId</span><span class="p">}</span>
-          <span class="nx">height</span><span class="o">=</span><span class="p">{</span><span class="mi">250</span><span class="p">}</span>
-        <span class="o">/&gt;</span>
-      <span class="o">&lt;</span><span class="err">/View&gt;</span>
-    <span class="o">&lt;</span><span class="err">/View&gt;</span>
-  <span class="p">);</span>
-<span class="p">};</span>
-</code></pre></div><h4 id="persist-where-the-user-last-left-the-video">Persist where the user last left the video</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-JSX" data-lang="JSX"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Modal</span>
+</span></span><span class="line"><span class="cl">  <span class="na">visible</span><span class="o">=</span><span class="p">{</span><span class="nx">modalVisible</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">transparent</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">onRequestClose</span><span class="o">=</span><span class="p">{</span><span class="nx">closeModal</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">VideoModal</span> <span class="na">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">selectedVideo</span><span class="p">}</span> <span class="na">onClose</span><span class="o">=</span><span class="p">{</span><span class="nx">closeModal</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">Modal</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">VideoModal</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">videoId</span><span class="p">,</span> <span class="nx">onClose</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">playerRef</span> <span class="o">=</span> <span class="nx">useRef</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nx">View</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">style</span><span class="o">=</span><span class="p">{{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;#000000dd&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">justifyContent</span><span class="o">:</span> <span class="s2">&#34;center&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="nx">View</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;white&#34;</span><span class="p">,</span> <span class="nx">padding</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nx">Text</span> <span class="nx">onPress</span><span class="o">=</span><span class="p">{</span><span class="nx">onClose</span><span class="p">}</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">textAlign</span><span class="o">:</span> <span class="s2">&#34;right&#34;</span> <span class="p">}}</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">Close</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="err">/Text&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nx">YoutubeIframe</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">playerRef</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">play</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">videoId</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">height</span><span class="o">=</span><span class="p">{</span><span class="mi">250</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="err">/View&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="err">/View&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><h4 id="persist-where-the-user-last-left-the-video">Persist where the user last left the video<a hidden class="anchor" aria-hidden="true" href="#persist-where-the-user-last-left-the-video">#</a></h4>
 <p>Install <code>@react-native-community/async-storage</code> from <a href="https://github.com/react-native-community/async-storage#install">here</a></p>
 <p>import it into your app -
 <code>import AsyncStorage from '@react-native-community/async-storage';</code></p>
 <p>To persist video progress, we can make a map of <code>videoId</code> to its time-stamp and completed status.</p>
 <p>eg -</p>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-  <span class="nt">&#34;DC471a9qrU4&#34;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&#34;timeStamp&#34;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>
-    <span class="nt">&#34;completed&#34;</span><span class="p">:</span> <span class="kc">false</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div><p>We can use AsyncStorage to store and fetch progress in this format -</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">saveVideoProgress</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">videoId</span><span class="p">,</span> <span class="nx">completed</span><span class="p">,</span> <span class="nx">timeStamp</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="nx">completed</span><span class="p">,</span>
-    <span class="nx">timeStamp</span><span class="p">,</span>
-  <span class="p">};</span>
-
-  <span class="k">return</span> <span class="nx">AsyncStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="nx">videoId</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
-<span class="p">};</span>
-
-<span class="kr">const</span> <span class="nx">getVideoProgress</span> <span class="o">=</span> <span class="nx">async</span> <span class="p">(</span><span class="nx">videoId</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">AsyncStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="nx">videoId</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">json</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">json</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="p">{</span>
-    <span class="nx">completed</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nx">timeStamp</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
-  <span class="p">};</span>
-<span class="p">};</span>
-</code></pre></div><p>Now to periodically update the timestamp, start an interval function that fetches the timestamp in regular intervals. It can be started when the <code>VideoModal</code> component mounts using <code>useEffect</code>. The <code>useEffect</code> function is called once when the component mounts to start the timer which will execute every 2 seconds here. It returns a function that clears the interval when the component is unmounted.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;DC471a9qrU4&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;timeStamp&#34;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;completed&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>We can use AsyncStorage to store and fetch progress in this format -</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">saveVideoProgress</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">videoId</span><span class="p">,</span> <span class="nx">completed</span><span class="p">,</span> <span class="nx">timeStamp</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">completed</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">timeStamp</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">AsyncStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="nx">videoId</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">getVideoProgress</span> <span class="o">=</span> <span class="kr">async</span> <span class="p">(</span><span class="nx">videoId</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">AsyncStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="nx">videoId</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">json</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">json</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">completed</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">timeStamp</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>Now to periodically update the timestamp, start an interval function that fetches the timestamp in regular intervals. It can be started when the <code>VideoModal</code> component mounts using <code>useEffect</code>. The <code>useEffect</code> function is called once when the component mounts to start the timer which will execute every 2 seconds here. It returns a function that clears the interval when the component is unmounted.</p>
 <p>(<code>VideoModal</code> component)</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="p">[</span><span class="nx">completed</span><span class="p">,</span> <span class="nx">setCompleted</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
-
-<span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">timer</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">playerRef</span><span class="p">.</span><span class="nx">current</span><span class="o">?</span><span class="p">.</span><span class="nx">getCurrentTime</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-      <span class="nx">saveVideoProgress</span><span class="p">({</span>
-        <span class="nx">videoId</span><span class="p">,</span>
-        <span class="nx">completed</span><span class="p">,</span>
-        <span class="nx">timeStamp</span><span class="o">:</span> <span class="nx">data</span><span class="p">,</span>
-      <span class="p">});</span>
-    <span class="p">});</span>
-  <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
-
-  <span class="k">return</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">clearInterval</span><span class="p">(</span><span class="nx">timer</span><span class="p">);</span>
-  <span class="p">};</span>
-<span class="p">},</span> <span class="p">[</span><span class="nx">videoId</span><span class="p">,</span> <span class="nx">completed</span><span class="p">]);</span>
-</code></pre></div><p>To seek to the previous timestamp, a callback to player <code>onReady</code> can be used. When the player becomes ready, the last updated timestamp is fetched and the video is set to that time stamp using the <code>seekTo</code> method exposed through the player ref.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">[</span><span class="nx">completed</span><span class="p">,</span> <span class="nx">setCompleted</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">timer</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">playerRef</span><span class="p">.</span><span class="nx">current</span><span class="o">?</span><span class="p">.</span><span class="nx">getCurrentTime</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">saveVideoProgress</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">videoId</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">completed</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">timeStamp</span><span class="o">:</span> <span class="nx">data</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">clearInterval</span><span class="p">(</span><span class="nx">timer</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span> <span class="p">[</span><span class="nx">videoId</span><span class="p">,</span> <span class="nx">completed</span><span class="p">]);</span>
+</span></span></code></pre></div><p>To seek to the previous timestamp, a callback to player <code>onReady</code> can be used. When the player becomes ready, the last updated timestamp is fetched and the video is set to that time stamp using the <code>seekTo</code> method exposed through the player ref.</p>
 <p>(<code>VideoModal</code> component)</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">onPlayerReady</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">getVideoProgress</span><span class="p">(</span><span class="nx">videoId</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">timeStamp</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">playerRef</span><span class="p">.</span><span class="nx">current</span><span class="o">?</span><span class="p">.</span><span class="nx">seekTo</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">timeStamp</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">});</span>
-<span class="p">},</span> <span class="p">[</span><span class="nx">videoId</span><span class="p">]);</span>
-</code></pre></div><p>To know when the player has finished playing a video, the <code>onChangeState</code> callback can be used. It emits a &ldquo;ended&rdquo; event when the video reaches the end. On receiving this event, the completed state can be set and stored subsequently in AsyncStorage.</p>
-<div class="highlight"><pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="p">&lt;</span><span class="nt">YoutubeIframe</span>
-  <span class="na">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">playerRef</span><span class="p">}</span>
-  <span class="na">play</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span>
-  <span class="na">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">videoId</span><span class="p">}</span>
-  <span class="na">height</span><span class="o">=</span><span class="p">{</span><span class="mi">250</span><span class="p">}</span>
-  <span class="na">onReady</span><span class="o">=</span><span class="p">{</span><span class="nx">onPlayerReady</span><span class="p">}</span>
-  <span class="na">onChangeState</span><span class="o">=</span><span class="p">{(</span><span class="nx">state</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">state</span> <span class="o">===</span> <span class="s2">&#34;ended&#34;</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">setCompleted</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}}</span>
-<span class="p">/&gt;</span>
-</code></pre></div><h4 id="track-completion-progress">Track completion progress</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">onPlayerReady</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">getVideoProgress</span><span class="p">(</span><span class="nx">videoId</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">timeStamp</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">playerRef</span><span class="p">.</span><span class="nx">current</span><span class="o">?</span><span class="p">.</span><span class="nx">seekTo</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">timeStamp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span> <span class="p">[</span><span class="nx">videoId</span><span class="p">]);</span>
+</span></span></code></pre></div><p>To know when the player has finished playing a video, the <code>onChangeState</code> callback can be used. It emits a &ldquo;ended&rdquo; event when the video reaches the end. On receiving this event, the completed state can be set and stored subsequently in AsyncStorage.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">YoutubeIframe</span>
+</span></span><span class="line"><span class="cl">  <span class="na">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">playerRef</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">play</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">videoId</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">height</span><span class="o">=</span><span class="p">{</span><span class="mi">250</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">onReady</span><span class="o">=</span><span class="p">{</span><span class="nx">onPlayerReady</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="na">onChangeState</span><span class="o">=</span><span class="p">{(</span><span class="nx">state</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">state</span> <span class="o">===</span> <span class="s2">&#34;ended&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">setCompleted</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">/&gt;</span>
+</span></span></code></pre></div><h4 id="track-completion-progress">Track completion progress<a hidden class="anchor" aria-hidden="true" href="#track-completion-progress">#</a></h4>
 <p>This will be simple function to query completion status of each video from <code>AsyncStorage</code>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">getProgress</span> <span class="o">=</span> <span class="nx">async</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">total</span> <span class="o">=</span> <span class="nx">videoSeries</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
-  <span class="kd">let</span> <span class="nx">completed</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">total</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">videoId</span> <span class="o">=</span> <span class="nx">videoSeries</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-    <span class="kr">const</span> <span class="nx">status</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">getVideoProgress</span><span class="p">(</span><span class="nx">videoId</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">status</span><span class="o">?</span><span class="p">.</span><span class="nx">completed</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">completed</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-
-  <span class="k">return</span> <span class="nx">completed</span> <span class="o">/</span> <span class="nx">total</span><span class="p">;</span>
-<span class="p">};</span>
-</code></pre></div><p>This function iterates through the videoList and checks if the video was watched to completion. Using the result of this function, we can calculate progress when the modal visibility changes. (since the modal has the actual video player).</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="p">[</span><span class="nx">progress</span><span class="p">,</span> <span class="nx">setProgress</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-<span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">getProgress</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">p</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">setProgress</span><span class="p">(</span><span class="nx">p</span><span class="p">);</span>
-  <span class="p">});</span>
-<span class="p">},</span> <span class="p">[</span><span class="nx">modalVisible</span><span class="p">]);</span>
-</code></pre></div><p>Now make a simple component to render this progress fraction as a progress bar.</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">ProgressBar</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">progress</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">width</span> <span class="o">=</span> <span class="p">(</span><span class="nx">progress</span> <span class="o">||</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;%&#34;</span><span class="p">;</span>
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="o">&lt;</span><span class="nx">View</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">borderWidth</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="nx">View</span>
-        <span class="nx">style</span><span class="o">=</span><span class="p">{{</span>
-          <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;green&#34;</span><span class="p">,</span>
-          <span class="nx">height</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
-          <span class="nx">width</span><span class="p">,</span>
-        <span class="p">}}</span>
-      <span class="o">/&gt;</span>
-    <span class="o">&lt;</span><span class="err">/View&gt;</span>
-  <span class="p">);</span>
-<span class="p">};</span>
-</code></pre></div><h3 id="final-result">Final Result</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">getProgress</span> <span class="o">=</span> <span class="kr">async</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">total</span> <span class="o">=</span> <span class="nx">videoSeries</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">completed</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">total</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">videoId</span> <span class="o">=</span> <span class="nx">videoSeries</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">status</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">getVideoProgress</span><span class="p">(</span><span class="nx">videoId</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">status</span><span class="o">?</span><span class="p">.</span><span class="nx">completed</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">completed</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">completed</span> <span class="o">/</span> <span class="nx">total</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>This function iterates through the videoList and checks if the video was watched to completion. Using the result of this function, we can calculate progress when the modal visibility changes. (since the modal has the actual video player).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">[</span><span class="nx">progress</span><span class="p">,</span> <span class="nx">setProgress</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">getProgress</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">p</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setProgress</span><span class="p">(</span><span class="nx">p</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span> <span class="p">[</span><span class="nx">modalVisible</span><span class="p">]);</span>
+</span></span></code></pre></div><p>Now make a simple component to render this progress fraction as a progress bar.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">ProgressBar</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">progress</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">width</span> <span class="o">=</span> <span class="p">(</span><span class="nx">progress</span> <span class="o">||</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;%&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nx">View</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">borderWidth</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="nx">View</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">style</span><span class="o">=</span><span class="p">{{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;green&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">height</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">width</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">      <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="err">/View&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><h3 id="final-result">Final Result<a hidden class="anchor" aria-hidden="true" href="#final-result">#</a></h3>
 <video width=269 height=590 controls="controls">
   <source src=/rn_youtube/rn_yt_3.mp4 type="video/mp4">
 </video>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useCallback</span><span class="p">,</span> <span class="nx">useRef</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react&#34;</span><span class="p">;</span>
-<span class="kr">import</span> <span class="p">{</span>
-  <span class="nx">SafeAreaView</span><span class="p">,</span>
-  <span class="nx">Text</span><span class="p">,</span>
-  <span class="nx">FlatList</span><span class="p">,</span>
-  <span class="nx">Image</span><span class="p">,</span>
-  <span class="nx">View</span><span class="p">,</span>
-  <span class="nx">TouchableOpacity</span><span class="p">,</span>
-  <span class="nx">Modal</span><span class="p">,</span>
-<span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-native&#34;</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">YoutubeIframe</span><span class="p">,</span> <span class="p">{</span> <span class="nx">getYoutubeMeta</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-native-youtube-iframe&#34;</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">AsyncStorage</span> <span class="nx">from</span> <span class="s2">&#34;@react-native-community/async-storage&#34;</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useCallback</span><span class="p">,</span> <span class="nx">useRef</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">SafeAreaView</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">Text</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">FlatList</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">Image</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">View</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">TouchableOpacity</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">Modal</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-native&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">YoutubeIframe</span><span class="p">,</span> <span class="p">{</span> <span class="nx">getYoutubeMeta</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-native-youtube-iframe&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">AsyncStorage</span> <span class="nx">from</span> <span class="s2">&#34;@react-native-community/async-storage&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">videoSeries</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;DC471a9qrU4&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;tVCYa_bnITg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;K74l26pE4YA&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;m3OjWNFREJo&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">modalVisible</span><span class="p">,</span> <span class="nx">showModal</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">selectedVideo</span><span class="p">,</span> <span class="nx">setSelectedVideo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">progress</span><span class="p">,</span> <span class="nx">setProgress</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">onVideoPress</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">((</span><span class="nx">videoId</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">showModal</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setSelectedVideo</span><span class="p">(</span><span class="nx">videoId</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="p">[]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">getProgress</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">p</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">setProgress</span><span class="p">(</span><span class="nx">p</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="p">[</span><span class="nx">modalVisible</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">closeModal</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">showModal</span><span class="p">(</span><span class="kc">false</span><span class="p">),</span> <span class="p">[]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nx">SafeAreaView</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}}</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="nx">FlatList</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">contentContainerStyle</span><span class="o">=</span><span class="p">{{</span> <span class="nx">margin</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">ListHeaderComponent</span><span class="o">=</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="o">&lt;&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="nx">Text</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">fontSize</span><span class="o">:</span> <span class="mi">18</span><span class="p">,</span> <span class="nx">fontWeight</span><span class="o">:</span> <span class="s2">&#34;bold&#34;</span> <span class="p">}}</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="mi">100</span> <span class="nx">Seconds</span> <span class="k">of</span> <span class="nx">Code</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="err">/Text&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="nx">ProgressBar</span> <span class="nx">progress</span><span class="o">=</span><span class="p">{</span><span class="nx">progress</span> <span class="o">*</span> <span class="mi">100</span><span class="p">}</span> <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="o">&lt;</span><span class="err">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">videoSeries</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">renderItem</span><span class="o">=</span><span class="p">{({</span> <span class="nx">item</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="o">&lt;</span><span class="nx">VideoItem</span> <span class="nx">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span> <span class="nx">onPress</span><span class="o">=</span><span class="p">{</span><span class="nx">onVideoPress</span><span class="p">}</span> <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">keyExtractor</span><span class="o">=</span><span class="p">{(</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">item</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="nx">Modal</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">visible</span><span class="o">=</span><span class="p">{</span><span class="nx">modalVisible</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">transparent</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">onRequestClose</span><span class="o">=</span><span class="p">{</span><span class="nx">closeModal</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nx">VideoModal</span> <span class="nx">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">selectedVideo</span><span class="p">}</span> <span class="nx">onClose</span><span class="o">=</span><span class="p">{</span><span class="nx">closeModal</span><span class="p">}</span> <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="err">/Modal&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="err">/SafeAreaView&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">getProgress</span> <span class="o">=</span> <span class="kr">async</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">total</span> <span class="o">=</span> <span class="nx">videoSeries</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">completed</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">total</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">videoId</span> <span class="o">=</span> <span class="nx">videoSeries</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">status</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">getVideoProgress</span><span class="p">(</span><span class="nx">videoId</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">status</span><span class="o">?</span><span class="p">.</span><span class="nx">completed</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">completed</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">completed</span> <span class="o">/</span> <span class="nx">total</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">ProgressBar</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">progress</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">width</span> <span class="o">=</span> <span class="p">(</span><span class="nx">progress</span> <span class="o">||</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;%&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nx">View</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">borderWidth</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="nx">View</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">style</span><span class="o">=</span><span class="p">{{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;green&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">height</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">width</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">      <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="err">/View&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">VideoItem</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">videoId</span><span class="p">,</span> <span class="nx">onPress</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">videoMeta</span><span class="p">,</span> <span class="nx">setVideoMeta</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">getYoutubeMeta</span><span class="p">(</span><span class="nx">videoId</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">setVideoMeta</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="p">[</span><span class="nx">videoId</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">videoMeta</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="nx">TouchableOpacity</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">onPress</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">onPress</span><span class="p">(</span><span class="nx">videoId</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flexDirection</span><span class="o">:</span> <span class="s2">&#34;row&#34;</span><span class="p">,</span> <span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nx">Image</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">source</span><span class="o">=</span><span class="p">{{</span> <span class="nx">uri</span><span class="o">:</span> <span class="nx">videoMeta</span><span class="p">.</span><span class="nx">thumbnail_url</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">style</span><span class="o">=</span><span class="p">{{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">width</span><span class="o">:</span> <span class="nx">videoMeta</span><span class="p">.</span><span class="nx">thumbnail_width</span> <span class="o">/</span> <span class="mi">4</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">height</span><span class="o">:</span> <span class="nx">videoMeta</span><span class="p">.</span><span class="nx">thumbnail_height</span> <span class="o">/</span> <span class="mi">4</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nx">View</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">justifyContent</span><span class="o">:</span> <span class="s2">&#34;center&#34;</span><span class="p">,</span> <span class="nx">marginStart</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="o">&lt;</span><span class="nx">Text</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span> <span class="nx">fontWeight</span><span class="o">:</span> <span class="s2">&#34;bold&#34;</span> <span class="p">}}</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span><span class="nx">videoMeta</span><span class="p">.</span><span class="nx">title</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="o">&lt;</span><span class="err">/Text&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="o">&lt;</span><span class="nx">Text</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">videoMeta</span><span class="p">.</span><span class="nx">author_name</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/Text&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="err">/View&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="err">/TouchableOpacity&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">VideoModal</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">videoId</span><span class="p">,</span> <span class="nx">onClose</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">playerRef</span> <span class="o">=</span> <span class="nx">useRef</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">completed</span><span class="p">,</span> <span class="nx">setCompleted</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">timer</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">playerRef</span><span class="p">.</span><span class="nx">current</span><span class="o">?</span><span class="p">.</span><span class="nx">getCurrentTime</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">saveVideoProgress</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">videoId</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">completed</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">timeStamp</span><span class="o">:</span> <span class="nx">data</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">      <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">clearInterval</span><span class="p">(</span><span class="nx">timer</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="p">[</span><span class="nx">videoId</span><span class="p">,</span> <span class="nx">completed</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">onPlayerReady</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">getVideoProgress</span><span class="p">(</span><span class="nx">videoId</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">timeStamp</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">playerRef</span><span class="p">.</span><span class="nx">current</span><span class="o">?</span><span class="p">.</span><span class="nx">seekTo</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">timeStamp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="p">[</span><span class="nx">videoId</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nx">View</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">style</span><span class="o">=</span><span class="p">{{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;#000000dd&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">justifyContent</span><span class="o">:</span> <span class="s2">&#34;center&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="nx">View</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;white&#34;</span><span class="p">,</span> <span class="nx">padding</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nx">Text</span> <span class="nx">onPress</span><span class="o">=</span><span class="p">{</span><span class="nx">onClose</span><span class="p">}</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">textAlign</span><span class="o">:</span> <span class="s2">&#34;right&#34;</span> <span class="p">}}</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">Close</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="err">/Text&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nx">YoutubeIframe</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">playerRef</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">play</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">videoId</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">height</span><span class="o">=</span><span class="p">{</span><span class="mi">250</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">onReady</span><span class="o">=</span><span class="p">{</span><span class="nx">onPlayerReady</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">onChangeState</span><span class="o">=</span><span class="p">{(</span><span class="nx">state</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="nx">state</span> <span class="o">===</span> <span class="s2">&#34;ended&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">setCompleted</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="err">/View&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="err">/View&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">saveVideoProgress</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">videoId</span><span class="p">,</span> <span class="nx">completed</span><span class="p">,</span> <span class="nx">timeStamp</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">completed</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">timeStamp</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">AsyncStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="nx">videoId</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">getVideoProgress</span> <span class="o">=</span> <span class="kr">async</span> <span class="p">(</span><span class="nx">videoId</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">AsyncStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="nx">videoId</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">json</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">json</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">completed</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">timeStamp</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
+</span></span></code></pre></div>
 
-<span class="kr">const</span> <span class="nx">videoSeries</span> <span class="o">=</span> <span class="p">[</span>
-  <span class="s2">&#34;DC471a9qrU4&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;tVCYa_bnITg&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;K74l26pE4YA&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;m3OjWNFREJo&#34;</span><span class="p">,</span>
-<span class="p">];</span>
+  </div>
 
-<span class="kr">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">modalVisible</span><span class="p">,</span> <span class="nx">showModal</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">selectedVideo</span><span class="p">,</span> <span class="nx">setSelectedVideo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">progress</span><span class="p">,</span> <span class="nx">setProgress</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-
-  <span class="kr">const</span> <span class="nx">onVideoPress</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">((</span><span class="nx">videoId</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">showModal</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
-    <span class="nx">setSelectedVideo</span><span class="p">(</span><span class="nx">videoId</span><span class="p">);</span>
-  <span class="p">},</span> <span class="p">[]);</span>
-
-  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">getProgress</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">p</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-      <span class="nx">setProgress</span><span class="p">(</span><span class="nx">p</span><span class="p">);</span>
-    <span class="p">});</span>
-  <span class="p">},</span> <span class="p">[</span><span class="nx">modalVisible</span><span class="p">]);</span>
-
-  <span class="kr">const</span> <span class="nx">closeModal</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">showModal</span><span class="p">(</span><span class="kc">false</span><span class="p">),</span> <span class="p">[]);</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="o">&lt;</span><span class="nx">SafeAreaView</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}}</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="nx">FlatList</span>
-        <span class="nx">contentContainerStyle</span><span class="o">=</span><span class="p">{{</span> <span class="nx">margin</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span>
-        <span class="nx">ListHeaderComponent</span><span class="o">=</span><span class="p">{</span>
-          <span class="o">&lt;&gt;</span>
-            <span class="o">&lt;</span><span class="nx">Text</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">fontSize</span><span class="o">:</span> <span class="mi">18</span><span class="p">,</span> <span class="nx">fontWeight</span><span class="o">:</span> <span class="s2">&#34;bold&#34;</span> <span class="p">}}</span><span class="o">&gt;</span>
-              <span class="mi">100</span> <span class="nx">Seconds</span> <span class="k">of</span> <span class="nx">Code</span>
-            <span class="o">&lt;</span><span class="err">/Text&gt;</span>
-            <span class="o">&lt;</span><span class="nx">ProgressBar</span> <span class="nx">progress</span><span class="o">=</span><span class="p">{</span><span class="nx">progress</span> <span class="o">*</span> <span class="mi">100</span><span class="p">}</span> <span class="o">/&gt;</span>
-          <span class="o">&lt;</span><span class="err">/&gt;</span>
-        <span class="p">}</span>
-        <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">videoSeries</span><span class="p">}</span>
-        <span class="nx">renderItem</span><span class="o">=</span><span class="p">{({</span> <span class="nx">item</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">(</span>
-          <span class="o">&lt;</span><span class="nx">VideoItem</span> <span class="nx">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span> <span class="nx">onPress</span><span class="o">=</span><span class="p">{</span><span class="nx">onVideoPress</span><span class="p">}</span> <span class="o">/&gt;</span>
-        <span class="p">)}</span>
-        <span class="nx">keyExtractor</span><span class="o">=</span><span class="p">{(</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">item</span><span class="p">}</span>
-      <span class="o">/&gt;</span>
-      <span class="o">&lt;</span><span class="nx">Modal</span>
-        <span class="nx">visible</span><span class="o">=</span><span class="p">{</span><span class="nx">modalVisible</span><span class="p">}</span>
-        <span class="nx">transparent</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span>
-        <span class="nx">onRequestClose</span><span class="o">=</span><span class="p">{</span><span class="nx">closeModal</span><span class="p">}</span>
-      <span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="nx">VideoModal</span> <span class="nx">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">selectedVideo</span><span class="p">}</span> <span class="nx">onClose</span><span class="o">=</span><span class="p">{</span><span class="nx">closeModal</span><span class="p">}</span> <span class="o">/&gt;</span>
-      <span class="o">&lt;</span><span class="err">/Modal&gt;</span>
-    <span class="o">&lt;</span><span class="err">/SafeAreaView&gt;</span>
-  <span class="p">);</span>
-<span class="p">};</span>
-
-<span class="kr">const</span> <span class="nx">getProgress</span> <span class="o">=</span> <span class="nx">async</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">total</span> <span class="o">=</span> <span class="nx">videoSeries</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
-  <span class="kd">let</span> <span class="nx">completed</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">total</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">videoId</span> <span class="o">=</span> <span class="nx">videoSeries</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-    <span class="kr">const</span> <span class="nx">status</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">getVideoProgress</span><span class="p">(</span><span class="nx">videoId</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">status</span><span class="o">?</span><span class="p">.</span><span class="nx">completed</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">completed</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="nx">completed</span> <span class="o">/</span> <span class="nx">total</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="kr">const</span> <span class="nx">ProgressBar</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">progress</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">width</span> <span class="o">=</span> <span class="p">(</span><span class="nx">progress</span> <span class="o">||</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;%&#34;</span><span class="p">;</span>
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="o">&lt;</span><span class="nx">View</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">borderWidth</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="nx">View</span>
-        <span class="nx">style</span><span class="o">=</span><span class="p">{{</span>
-          <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;green&#34;</span><span class="p">,</span>
-          <span class="nx">height</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
-          <span class="nx">width</span><span class="p">,</span>
-        <span class="p">}}</span>
-      <span class="o">/&gt;</span>
-    <span class="o">&lt;</span><span class="err">/View&gt;</span>
-  <span class="p">);</span>
-<span class="p">};</span>
-
-<span class="kr">const</span> <span class="nx">VideoItem</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">videoId</span><span class="p">,</span> <span class="nx">onPress</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">videoMeta</span><span class="p">,</span> <span class="nx">setVideoMeta</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
-  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">getYoutubeMeta</span><span class="p">(</span><span class="nx">videoId</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-      <span class="nx">setVideoMeta</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-    <span class="p">});</span>
-  <span class="p">},</span> <span class="p">[</span><span class="nx">videoId</span><span class="p">]);</span>
-
-  <span class="k">if</span> <span class="p">(</span><span class="nx">videoMeta</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="p">(</span>
-      <span class="o">&lt;</span><span class="nx">TouchableOpacity</span>
-        <span class="nx">onPress</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">onPress</span><span class="p">(</span><span class="nx">videoId</span><span class="p">)}</span>
-        <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">flexDirection</span><span class="o">:</span> <span class="s2">&#34;row&#34;</span><span class="p">,</span> <span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span>
-      <span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="nx">Image</span>
-          <span class="nx">source</span><span class="o">=</span><span class="p">{{</span> <span class="nx">uri</span><span class="o">:</span> <span class="nx">videoMeta</span><span class="p">.</span><span class="nx">thumbnail_url</span> <span class="p">}}</span>
-          <span class="nx">style</span><span class="o">=</span><span class="p">{{</span>
-            <span class="nx">width</span><span class="o">:</span> <span class="nx">videoMeta</span><span class="p">.</span><span class="nx">thumbnail_width</span> <span class="o">/</span> <span class="mi">4</span><span class="p">,</span>
-            <span class="nx">height</span><span class="o">:</span> <span class="nx">videoMeta</span><span class="p">.</span><span class="nx">thumbnail_height</span> <span class="o">/</span> <span class="mi">4</span><span class="p">,</span>
-          <span class="p">}}</span>
-        <span class="o">/&gt;</span>
-        <span class="o">&lt;</span><span class="nx">View</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">justifyContent</span><span class="o">:</span> <span class="s2">&#34;center&#34;</span><span class="p">,</span> <span class="nx">marginStart</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span><span class="o">&gt;</span>
-          <span class="o">&lt;</span><span class="nx">Text</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">marginVertical</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span> <span class="nx">fontWeight</span><span class="o">:</span> <span class="s2">&#34;bold&#34;</span> <span class="p">}}</span><span class="o">&gt;</span>
-            <span class="p">{</span><span class="nx">videoMeta</span><span class="p">.</span><span class="nx">title</span><span class="p">}</span>
-          <span class="o">&lt;</span><span class="err">/Text&gt;</span>
-          <span class="o">&lt;</span><span class="nx">Text</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">videoMeta</span><span class="p">.</span><span class="nx">author_name</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/Text&gt;</span>
-        <span class="o">&lt;</span><span class="err">/View&gt;</span>
-      <span class="o">&lt;</span><span class="err">/TouchableOpacity&gt;</span>
-    <span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="kr">const</span> <span class="nx">VideoModal</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">videoId</span><span class="p">,</span> <span class="nx">onClose</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">playerRef</span> <span class="o">=</span> <span class="nx">useRef</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">completed</span><span class="p">,</span> <span class="nx">setCompleted</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
-
-  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">timer</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-      <span class="nx">playerRef</span><span class="p">.</span><span class="nx">current</span><span class="o">?</span><span class="p">.</span><span class="nx">getCurrentTime</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-        <span class="nx">saveVideoProgress</span><span class="p">({</span>
-          <span class="nx">videoId</span><span class="p">,</span>
-          <span class="nx">completed</span><span class="p">,</span>
-          <span class="nx">timeStamp</span><span class="o">:</span> <span class="nx">data</span><span class="p">,</span>
-        <span class="p">});</span>
-      <span class="p">});</span>
-    <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
-
-    <span class="k">return</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-      <span class="nx">clearInterval</span><span class="p">(</span><span class="nx">timer</span><span class="p">);</span>
-    <span class="p">};</span>
-  <span class="p">},</span> <span class="p">[</span><span class="nx">videoId</span><span class="p">,</span> <span class="nx">completed</span><span class="p">]);</span>
-
-  <span class="kr">const</span> <span class="nx">onPlayerReady</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">getVideoProgress</span><span class="p">(</span><span class="nx">videoId</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">timeStamp</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">playerRef</span><span class="p">.</span><span class="nx">current</span><span class="o">?</span><span class="p">.</span><span class="nx">seekTo</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">timeStamp</span><span class="p">);</span>
-      <span class="p">}</span>
-    <span class="p">});</span>
-  <span class="p">},</span> <span class="p">[</span><span class="nx">videoId</span><span class="p">]);</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="o">&lt;</span><span class="nx">View</span>
-      <span class="nx">style</span><span class="o">=</span><span class="p">{{</span>
-        <span class="nx">flex</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;#000000dd&#34;</span><span class="p">,</span>
-        <span class="nx">justifyContent</span><span class="o">:</span> <span class="s2">&#34;center&#34;</span><span class="p">,</span>
-      <span class="p">}}</span>
-    <span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="nx">View</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&#34;white&#34;</span><span class="p">,</span> <span class="nx">padding</span><span class="o">:</span> <span class="mi">16</span> <span class="p">}}</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="nx">Text</span> <span class="nx">onPress</span><span class="o">=</span><span class="p">{</span><span class="nx">onClose</span><span class="p">}</span> <span class="nx">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">textAlign</span><span class="o">:</span> <span class="s2">&#34;right&#34;</span> <span class="p">}}</span><span class="o">&gt;</span>
-          <span class="nx">Close</span>
-        <span class="o">&lt;</span><span class="err">/Text&gt;</span>
-        <span class="o">&lt;</span><span class="nx">YoutubeIframe</span>
-          <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">playerRef</span><span class="p">}</span>
-          <span class="nx">play</span><span class="o">=</span><span class="p">{</span><span class="kc">true</span><span class="p">}</span>
-          <span class="nx">videoId</span><span class="o">=</span><span class="p">{</span><span class="nx">videoId</span><span class="p">}</span>
-          <span class="nx">height</span><span class="o">=</span><span class="p">{</span><span class="mi">250</span><span class="p">}</span>
-          <span class="nx">onReady</span><span class="o">=</span><span class="p">{</span><span class="nx">onPlayerReady</span><span class="p">}</span>
-          <span class="nx">onChangeState</span><span class="o">=</span><span class="p">{(</span><span class="nx">state</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-            <span class="k">if</span> <span class="p">(</span><span class="nx">state</span> <span class="o">===</span> <span class="s2">&#34;ended&#34;</span><span class="p">)</span> <span class="p">{</span>
-              <span class="nx">setCompleted</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
-            <span class="p">}</span>
-          <span class="p">}}</span>
-        <span class="o">/&gt;</span>
-      <span class="o">&lt;</span><span class="err">/View&gt;</span>
-    <span class="o">&lt;</span><span class="err">/View&gt;</span>
-  <span class="p">);</span>
-<span class="p">};</span>
-
-<span class="kr">const</span> <span class="nx">saveVideoProgress</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">videoId</span><span class="p">,</span> <span class="nx">completed</span><span class="p">,</span> <span class="nx">timeStamp</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="nx">completed</span><span class="p">,</span>
-    <span class="nx">timeStamp</span><span class="p">,</span>
-  <span class="p">};</span>
-
-  <span class="k">return</span> <span class="nx">AsyncStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="nx">videoId</span><span class="p">,</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
-<span class="p">};</span>
-
-<span class="kr">const</span> <span class="nx">getVideoProgress</span> <span class="o">=</span> <span class="nx">async</span> <span class="p">(</span><span class="nx">videoId</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">AsyncStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="nx">videoId</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">json</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">json</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="p">{</span>
-    <span class="nx">completed</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nx">timeStamp</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
-  <span class="p">};</span>
-<span class="p">};</span>
-
-<span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
-</code></pre></div>
-</div>
-
-        <footer class="post-footer clearfix">
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
     
-
-    <div class="share">
-        
-            <a class="icon-twitter" href="https://twitter.com/share?text=A%20better%20way%20to%20integrate%20youtube%20into%20react%20native&url=https%3a%2f%2flonelycpp.github.io%2f2020%2f03%2f15%2freact-native-youtube%2f"
-                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                <i class="fa fa-twitter"></i>
-                <span class="hidden">Twitter</span>
-            </a>
-        
-
-        
-            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2flonelycpp.github.io%2f2020%2f03%2f15%2freact-native-youtube%2f"
-                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                <i class="fa fa-facebook"></i>
-                <span class="hidden">Facebook</span>
-            </a>
-        
-
-        
-        
-            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=A%20better%20way%20to%20integrate%20youtube%20into%20react%20native&url=https%3a%2f%2flonelycpp.github.io%2f2020%2f03%2f15%2freact-native-youtube%2f&summary="
-               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;">
-               <i class="fa fa-linkedin"></i>
-               <span class="hidden">LinkedIn</span>
-            </a>
-        
-    </div>
+<footer class="footer">
+    <span>Ananthu P Kanive</span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
 
-        
-    </article>
-</div>
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
 
-            </div>
-        </div>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
 
-        <footer class="footer">
-            <div class="container">
-                <div class="site-title-wrapper">
-                    <h1 class="site-title">
-                        <a title="Mobile Developer" href="https://lonelycpp.github.io/">Mobile Developer</a>
-                    </h1>
-                    <a class="button-square button-jump-top js-jump-top" href="#">
-                        <i class="fa fa-angle-up"></i>
-                    </a>
-                </div>
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-                <p class="footer-copyright">
-                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
-                </p>
-                <p class="footer-copyright">
-                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
-                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
-                </p>
-            </div>
-        </footer>
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
-        <script src="https://lonelycpp.github.io/js/jquery-1.11.3.min.js"></script>
-        <script src="https://lonelycpp.github.io/js/jquery.fitvids.js"></script>
-        <script src="https://lonelycpp.github.io/js/scripts.js"></script>
-    </body>
+</script>
+</body>
+
 </html>
-
