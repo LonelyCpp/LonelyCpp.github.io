@@ -15,7 +15,7 @@
       
       <guid>https://lonelycpp.github.io/2023/11/15/observables-in-a-reactive-world/</guid>
       <description>Picture this: you&amp;rsquo;re faced with the challenge of updating state from realms outside the familiar component tree. What was once a straightforward task within React&amp;rsquo;s structured paradigm suddenly transforms into a complex puzzle. Traditional solutions falter, leaving React developers grappling with a dilemma that defies the simplicity promised by the framework.
-As React developers, we revel in the simplicity of managing state within our components. However, the landscape becomes less clear when we face the challenge of updating state from beyond React&amp;rsquo;s familiar borders.</description>
+As React developers, we love how easy it is to handle state inside our components. But things get a bit tricky when we need to update state from outside React&amp;rsquo;s usual territory.</description>
     </item>
     
     <item>
